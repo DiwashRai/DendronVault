@@ -5,3 +5,5 @@ seeds
 .next
 pods/service-connections
 *.code-workspace
+
+.backup
