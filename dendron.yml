@@ -90,6 +90,7 @@ publishing:
         - root
     writeStubs: false
     siteRootDir: docs
+    siteUrl: https://diwashrai.github.io/DendronVault
     seo:
         title: Dendron
         description: Personal Knowledge Space
