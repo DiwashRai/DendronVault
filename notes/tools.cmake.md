@@ -2,7 +2,7 @@
 id: hp7jv15215pi0s92tkgr4ob
 title: Cmake
 desc: ''
-updated: 1665363478837
+updated: 1675166835434
 created: 1665227552280
 ---
 
@@ -20,7 +20,7 @@ created: 1665227552280
 - Use at least version 3.0
 - Some flags should still be declared at the top level that you want everywhere. E.g. -Wall -Werror
 
-```
+```cmake
 cmake_minimum_required(VERSION 3.0)
 
 if (MSVC)
@@ -32,7 +32,7 @@ endif()
 
 ### Delcare your module
 
-```
+```cmake
 add_library(mylib
     src/file1.cpp
     src/file2.cpp
@@ -41,7 +41,7 @@ add_library(mylib
 
 ### Declare your flags
 
-```
+```cmake
 target_include_directories(mylib PUBLIC include)
 target_include_directories(mylib PRIVATE src)
 
@@ -53,7 +53,7 @@ endif()
 
 ### Declare your dependencies
 
-```
+```cmake
 # Public (interface) dependencies
 target_link_libraries(mylib PUBLIC abc)
 
@@ -63,7 +63,7 @@ target_link_libraries(mylib PRIVATE xyz)
 
 ### Header-only libraries
 
-```
+```cmake
 add_library(mylib INTERFACE)
 
 target_include_directories(mylib INTERFACE include)
