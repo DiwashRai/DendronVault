@@ -2,38 +2,74 @@
 id: 04uwy15ipgua4lzrmnrr5vg
 title: Git
 desc: ''
-updated: 1664675589329
+updated: 1675897645510
 created: 1664675034543
 ---
 
 ## General commands
 
+### Removing untracked files
+```shell
+# show what files would be deleted
+git clean -n
+# show what directories would be deleted
+git clean -nd
+# delete untracked files
+git clean -f
+# delete untracked files in specific folder
+git clean -f path/to/folder
+# delete untracked files AND folders
+git clean -fd
+# delete ignored files
+git clean -fx
+```
+
 ### Git reset
 Command to unstage changes
-- `git reset <commit> -- <path>` commit parameter is optional. By Default it points to head.
-- `git reset - -hard <commit>` unstages all changes and discards them.
+```shell
+# commit parameter is optional. By Default it points to head.
+git reset <commit> -- <path>
+# unstage all changes and discard them.
+git reset - -hard <commit>
+```
 
-### Remove unstaged changes on Git
-To remove unstaged changes, use the `git checkout` command.
-- `git checkout -- <path>` to unstage on file at a time
-- `git checkout .` to unstage everything in one go
+### Discard unstaged changes on Git
+To discard unstaged changes, use the `git checkout` command.  
+This means to undo any local changed that a checked in file may have  
+```shell
+# to unstage on file at a time
+git restore path/to/file/to/revert
+# to unstage everything in one go
+git restore .
+```
 
 ### Git add
-- `git add -A` stages **all changes**
-- `git add .` stages new files and modifications, **without deletions**
-- `git add -u` stages modifications and deletions, **without new files**
+```shell
+# stage all changes
+git add -A
+# stages new files and modifications, **without deletions**
+git add .
+# stages modifications and deletions, **without new files**
+git add -u
+```
 
 ### Edit git config file
-- `git config --config --edit`
+```shell
+git config --config --edit
+```
 
 ### Reading last commit
-- `git log -1`
-  - shows last commit only
-- `git show`
-  - shows head commit by default
+```shell
+# show last commit only
+git log -1
+# show head commit
+git show
+```
 
 ### Git commit with specific date
-- `git commit --date 2022-01-20`
+```shell
+git commit --date 2022-01-20
+```
 
 ## Creating Git repo locally
 - Run `git init` in the project directory
