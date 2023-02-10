@@ -2,13 +2,13 @@
 id: 3r1m1ztnh7xno6m00fnz03t
 title: Launch Json
 desc: ''
-updated: 1665342225886
+updated: 1675995618283
 created: 1665342169445
 ---
 
 ### cpp debug
 
-```
+```json
 {
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
