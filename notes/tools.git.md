@@ -2,11 +2,20 @@
 id: 04uwy15ipgua4lzrmnrr5vg
 title: Git
 desc: ''
-updated: 1675897645510
+updated: 1676152006794
 created: 1664675034543
 ---
 
 ## General commands
+
+### Revert commit
+To commit the previous commit
+```shell
+# get commit hash of desired commit. In this case the previous one
+git log -1 
+# git revert with correct hash
+git revert 11d172998d218c5e25e949fc82a3df3b41a241bd
+```
 
 ### Removing untracked files
 ```shell
