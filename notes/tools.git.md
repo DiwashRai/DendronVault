@@ -2,11 +2,18 @@
 id: 04uwy15ipgua4lzrmnrr5vg
 title: Git
 desc: ''
-updated: 1676152006794
+updated: 1676229978119
 created: 1664675034543
 ---
 
 ## General commands
+
+### Create a new branch and push to remote repository
+```shell
+git checkout -b <branch>
+# Edit files, add and commit. Then push with the -u (short for --set-upstream) option
+git push -u origin <branch>
+```
 
 ### Revert commit
 To commit the previous commit
