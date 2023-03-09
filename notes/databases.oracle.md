@@ -2,7 +2,7 @@
 id: tn0a5nqbrce9yebvej9h736
 title: Oracle
 desc: ''
-updated: 1677667276305
+updated: 1678363289190
 created: 1677666402987
 ---
 
@@ -19,3 +19,47 @@ exp <user>/<password>@<pluggableDB>
 - Export done in WE8MSWIM1252 character set...
 - User to be exported: (RETURN to quit) > schema_user
 - exporting...
+
+### Create a new pluggable database (oracle 21c)  
+```shell
+
+sqlplus / as sysdba
+
+CREATE PLUGGABLE DATABASE salespdb
+  ADMIN USER salesadm IDENTIFIED BY password
+  ROLES = (dba)
+  DEFAULT TABLESPACE sales
+    DATAFILE '/disk1/oracle/dbs/salespdb/sales01.dbf' SIZE 250M AUTOEXTEND ON
+  FILE_NAME_CONVERT = ('/disk1/oracle/dbs/pdbseed/',
+                       '/disk1/oracle/dbs/salespdb/')
+  STORAGE (MAXSIZE 2G)
+  PATH_PREFIX = '/disk1/oracle/dbs/salespdb/';
+```
+
+### List pluggable databases  
+```shell
+COLUMN NAME FORMAT A8
+
+SELECT NAME, CON_ID, DBID, CON_UID, GUID FROM V$CONTAINERS ORDER BY CON_ID;
+```
+
+### Show open mode status of pluggable databases  
+```shell
+COLUMN NAME FORMAT A15
+COLUMN RESTRICTED FORMAT A10
+COLUMN OPEN_TIME FORMAT A30
+SELECT NAME, OPEN_MODE, RESTRICTED, OPEN_TIME from V$PDBS;
+```
+
+### change pdb to READ WRITE  
+```shell
+ALTER PLUGGABLE DATABASE XEPDB4 OPEN READ WRITE;
+```
+
+### deleting a pluggable database  
+```shell
+sqlplus / as sysdba
+
+alter pluggable database XEPDB4 close;
+drop pluggable database XEPDB4 including datafiles;
+```
