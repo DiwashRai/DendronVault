@@ -2,7 +2,7 @@
 id: tn0a5nqbrce9yebvej9h736
 title: Oracle
 desc: ''
-updated: 1678363289190
+updated: 1678788152208
 created: 1677666402987
 ---
 
@@ -54,6 +54,11 @@ SELECT NAME, OPEN_MODE, RESTRICTED, OPEN_TIME from V$PDBS;
 ### change pdb to READ WRITE  
 ```shell
 ALTER PLUGGABLE DATABASE XEPDB4 OPEN READ WRITE;
+```
+
+### save pdb state so you don't have to manually open
+```shell
+ALTER PLUGGABLE DATABASE XEPDB4 SAVE STATE;
 ```
 
 ### deleting a pluggable database  
