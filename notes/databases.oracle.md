@@ -55,6 +55,11 @@ SELECT NAME, OPEN_MODE, RESTRICTED, OPEN_TIME from V$PDBS;
 ALTER PLUGGABLE DATABASE XEPDB4 OPEN READ WRITE;
 ```
 
+### save pdb state so you don't have to manually open
+```shell
+ALTER PLUGGABLE DATABASE XEPDB4 SAVE STATE;
+```
+
 ### deleting a pluggable database  
 ```shell
 sqlplus / as sysdba
