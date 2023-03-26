@@ -2,7 +2,7 @@
 id: tn0a5nqbrce9yebvej9h736
 title: Oracle
 desc: ''
-updated: 1678363289190
+updated: 1678365640920
 created: 1677666402987
 ---
 
@@ -41,7 +41,6 @@ CREATE PLUGGABLE DATABASE salespdb
 COLUMN NAME FORMAT A8
 
 SELECT NAME, CON_ID, DBID, CON_UID, GUID FROM V$CONTAINERS ORDER BY CON_ID;
-```
 
 ### Show open mode status of pluggable databases  
 ```shell
@@ -62,4 +61,11 @@ sqlplus / as sysdba
 
 alter pluggable database XEPDB4 close;
 drop pluggable database XEPDB4 including datafiles;
+```
+
+### switching session container  
+```shell
+show con_name
+alter session set container = mypdb2;
+show con_name
 ```
