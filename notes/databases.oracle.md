@@ -41,6 +41,7 @@ CREATE PLUGGABLE DATABASE salespdb
 COLUMN NAME FORMAT A8
 
 SELECT NAME, CON_ID, DBID, CON_UID, GUID FROM V$CONTAINERS ORDER BY CON_ID;
+```
 
 ### Show open mode status of pluggable databases  
 ```shell
