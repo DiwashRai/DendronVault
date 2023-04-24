@@ -2,7 +2,7 @@
 id: mel9qapq3oyqb5gpd7onyeq
 title: Dynamic Array
 desc: ''
-updated: 1682274764984
+updated: 1682366392517
 created: 1682266159788
 ---
 
@@ -21,10 +21,6 @@ public:
 
     // assignment operators
     Vector& operator=(const Vector& other);
-    Vector& operator=(Vector&& other);
-
-    // move constructor and assignment operator
-    Vector(Vector&& other);
     Vector& operator=(Vector&& other);
 
     // destructor
@@ -52,13 +48,14 @@ public:
     void resize(int new_size);
     void push_back(const T& value);
     void pop_back();
-    void emplace_back(const T& value);
+    template <typename... Args>
+    void emplace_back(Args&&... args);
     void clear();
 
     // Iterator support
-    double* begin();
-    const double* begin() const;
-    double* end();
-    const double* end() const;
+    T* begin();
+    const T* begin() const;
+    T* end();
+    const T* end() const;
 };
 ```

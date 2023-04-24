@@ -2,7 +2,7 @@
 id: 3xirn9y2ejhs5hgoh6ko9i1
 title: Heap
 desc: ''
-updated: 1682275789077
+updated: 1682365623975
 created: 1682275626872
 ---
 
@@ -20,10 +20,6 @@ public:
     // assignment operators
     Heap& operator=(const Heap& other);
     Heap& operator=(Heap&& other);
-
-    // move constructor and assignment operator
-    Heap(Vector&& other);
-    Heap& operator=(Vector&& other);
 
     // destructor
     ~Heap();

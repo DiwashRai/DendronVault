@@ -2,7 +2,7 @@
 id: hame6ftjq5bra5fzc98u64y
 title: Linked List
 desc: ''
-updated: 1682274198379
+updated: 1682366180295
 created: 1682273942510
 ---
 
@@ -22,10 +22,6 @@ public:
     LinkedList& operator=(const LinkedList& other);
     LinkedList& operator=(LinkedList&& other);
 
-    // move constructor and assignment operator
-    LinkedList(Vector&& other);
-    LinkedList& operator=(Vector&& other);
-
     // destructor
     ~LinkedList();
 
@@ -36,7 +32,7 @@ public:
     const T& back() const;
 
     // capacity
-    int size() const;
+    std::size_t size() const;
     bool empty() const;
 
     // modifiers

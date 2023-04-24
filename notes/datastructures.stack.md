@@ -2,7 +2,7 @@
 id: xgleienln5stv551d6l7qv6
 title: Stack
 desc: ''
-updated: 1682274350191
+updated: 1682366146295
 created: 1682266168140
 ---
 
@@ -22,25 +22,21 @@ public:
     Stack& operator=(const Stack& other);
     Stack& operator=(Stack&& other);
 
-    // move constructor and assignment operator
-    Stack(Vector&& other);
-    Stack& operator=(Vector&& other);
-
     // destructor
     ~Stack();
 
     // accessors
-    T& top();
-    const T& top() const;
+    const T& top();
 
     // capacity
-    int size() const;
+    std::size_t size() const;
     bool empty() const;
 
     // modifiers
     void push(const T& value);
     void pop();
-    void emplace(const T& value);
+    template <typename... Args>
+    void emplace(Args&&... args);
     void clear();
 
 private:

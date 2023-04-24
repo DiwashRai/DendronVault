@@ -2,7 +2,7 @@
 id: j6629ov8i69dg12ifxdbzqa
 title: Queue
 desc: ''
-updated: 1682274579401
+updated: 1682366158862
 created: 1682274477681
 ---
 
@@ -22,10 +22,6 @@ public:
     Queue& operator=(const Queue& other);
     Queue& operator=(Queue&& other);
 
-    // move constructor and assignment operator
-    Queue(Vector&& other);
-    Queue& operator=(Vector&& other);
-
     // destructor
     ~Queue();
 
@@ -36,13 +32,14 @@ public:
     const T& back() const;
 
     // capacity
-    int size() const;
+    std::size_t size() const;
     bool empty() const;
 
     // modifiers
     void push(const T& value);
     void pop();
-    void emplace(const T& value);
+    template <typename... Args>
+    void emplace(Args&&... args);
     void clear();
 };
 ```
