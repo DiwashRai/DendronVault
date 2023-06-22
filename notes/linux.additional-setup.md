@@ -2,7 +2,7 @@
 id: qogf6mgpnnfneh0wjxxl7dh
 title: Additional Setup
 desc: ''
-updated: 1687225022369
+updated: 1687451316650
 created: 1687087095027
 ---
 
@@ -31,13 +31,66 @@ Download JetBrains at least
 
 ## other packages
 - `sudo dnf install tmux`
-- `sudo dnf install ulauncher`
 - `sudo dnf install dmenu`
 - `sudo dnf install neovim python3-neovim`
 - `sudo dnf install vlc`
+- lazygit
 
 ## install brave browser
 - `sudo dnf install dnf-plugins-core`
 - `sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/`
 - `sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc`
 - `sudo dnf install brave-browser brave-keyring`
+
+## monitor output stuff
+- xrandr
+- arandr
+- autorandr
+Use arandr to apply the layout. Use autorandr to save the profile.
+
+## networking
+- Fedora uses NetworkManager by default so these commands are probably not necessary
+  - `sudo dnf install NetworkManager-tui`
+  - `sudo systemctl enable NetworkManager`
+  - `sudo systemctl start NetworkManager`
+- If you decide to use NetworkManager you can also use the applet
+  - `sudo dnf install NetworkManager-applet`
+  - `nm-applet &` in qtile config. Requires a notification daemon to be running
+
+## notifications
+- `sudo dnf install dunst`
+
+## touchpad settings
+- ensure following packages are installed
+  - `sudo dnf install libinput libinput-utils`
+- create `/etc/X11/xorg.conf.d/30-touchpad.conf` with the following contents:
+
+```conf
+Section "InputClass"
+    Identifier "libinput touchpad catchall"
+    MatchIsTouchpad "on"
+    MatchDevicePath "/dev/input/event*"
+    Driver "libinput"
+    Option "Tapping" "on"
+    Option "NaturalScrolling" "true"
+    Option "ScrollPixelDistance" "25"
+    Option "ClickMethod" "clickfinger"
+    Option "TappingButtonMap" "lrm"
+    Option "AccelProfile" "adaptive"
+    Option "AccelSpeed" "0.2"
+    Option "DisableWhileTyping" "true"
+EndSection
+```
+
+## rofi
+- `sudo dnf install rofi`
+- `rofi-theme-selector` to select a theme
+- setup scripts
+  - powermenu script
+
+
+## dev related setup
+- vs code
+  - [vs code setup](https://code.visualstudio.com/docs/setup/linux)
+- cmake
+
