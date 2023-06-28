@@ -2,7 +2,7 @@
 id: qogf6mgpnnfneh0wjxxl7dh
 title: Additional Setup
 desc: ''
-updated: 1687451316650
+updated: 1687704199123
 created: 1687087095027
 ---
 
@@ -82,11 +82,27 @@ Section "InputClass"
 EndSection
 ```
 
+## keyboard settings
+- remap caps to ctrl
+  - `cd /etc/X11/xorg.conf.d`
+  - `sudo vim 00-keyboard.conf`
+  - add the following to the file
+
+```conf
+Section "InputClass"
+        Identifier "system-keyboard"
+        MatchIsKeyboard "on"
+        Option "XkbOptions" "ctrl:nocaps"
+EndSection
+```
+
 ## rofi
 - `sudo dnf install rofi`
 - `rofi-theme-selector` to select a theme
 - setup scripts
   - powermenu script
+  - quick_access script
+  - confedit script
 
 
 ## dev related setup
