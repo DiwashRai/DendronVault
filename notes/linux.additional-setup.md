@@ -2,7 +2,7 @@
 id: qogf6mgpnnfneh0wjxxl7dh
 title: Additional Setup
 desc: ''
-updated: 1687704199123
+updated: 1687996423913
 created: 1687087095027
 ---
 
@@ -109,4 +109,11 @@ EndSection
 - vs code
   - [vs code setup](https://code.visualstudio.com/docs/setup/linux)
 - cmake
+- vcpkg
+  - [vcpkg setup](https://vcpkg.io/en/getting-started.html)
+  - general steps:
+    - git clone
+    - bootstrap script
+    - vcpkg install catch2:x64-linux
+    - vcpkg install benchmark:x64-linux
 
