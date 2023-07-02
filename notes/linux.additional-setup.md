@@ -2,7 +2,7 @@
 id: qogf6mgpnnfneh0wjxxl7dh
 title: Additional Setup
 desc: ''
-updated: 1687996423913
+updated: 1688231669669
 created: 1687087095027
 ---
 
@@ -95,6 +95,9 @@ Section "InputClass"
         Option "XkbOptions" "ctrl:nocaps"
 EndSection
 ```
+- For switching keyboard layouts
+  - sudo dnf install setxkbmap
+  - and use rofi script to switch layouts in scripts dir from .dotfiles
 
 ## rofi
 - `sudo dnf install rofi`
