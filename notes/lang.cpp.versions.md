@@ -2,7 +2,7 @@
 id: 3vtad9ehlxwa5n2gffrjsr1
 title: Versions
 desc: ''
-updated: 1688495175611
+updated: 1688501773657
 created: 1688494431962
 ---
 
@@ -89,7 +89,24 @@ template parameters in a type-safe way.
 ## C++ 14
 A more minor release in comparison to C++11.
 
+- **Generalised lambda expressions**: Allows lambdas to deduce the return type of functions and
+introduced generalised capture, which allows capturing of variables by move.
+- **Binary literals**: Allows binary literals to be specified using the `0b` prefix.
+- **Function return type deduction**: The compiler can now deduce the return type of a function.
+- **Extended constexpr**: Extended `constexpr` to allow more functions to be evaluated at compile
+time.
+- **Variable templates**: Allows definition of variables using template parameters.
+- **Relaxed constraints on constexpr functions**: constexpr functions can now include loops,
+switches etc, allowing for more complex compile time computations.
+- **Deprecation of auto_ptr**: `auto_ptr` deprecated and replaced by `unique_ptr`
+- **Generic lambdas**: lambas can take auto type parameters, making them polymorphic.
+- **Standard user-defined literals**: Allows defining of new literal ==suffixes==. It is now
+possible to represent 5 seconds with something like `5_s` now.
+- **\[\[deprecated]] Attribute**: Can no mark code as deprecated to show code should not be used.
+- **Improved STL**: addtional extensions to the STL.
+
 ## C++ 17
+Another significant update to C++. Introduced
 
 ## C++ 20
 
