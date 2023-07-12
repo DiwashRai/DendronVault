@@ -106,7 +106,32 @@ possible to represent 5 seconds with something like `5_s` now.
 - **Improved STL**: addtional extensions to the STL.
 
 ## C++ 17
-Another significant update to C++. Introduced
+Another significant update to C++. Many new language features introduced, library components, and
+improved performance in certain areas.
+
+- **Structured bindings**: allows declaration of multiple variables initialised from a tuple or
+struct in a single statement. Makes code more compact and readable.
+- **If and Switch with initialiser**: can now declare a variable in the same statement as an if or
+switch, reducing scope and making code cleaner.
+- **Inline variables**: Similar to inline functions, inline variables can be defined in headers
+and included in multiple files without violating one definition rule.
+- **Fold expressions**: simplifies usage of variadic templates by allowing operations to be
+performed on all elements of a parameter pack.
+- **constexpr if (Compile-time if)**: allows conditional compilation based on template parameters,
+eliminating the need for template specialisations in many cases.
+- **Template arugment deduction for class templates**: allows template class instantiation without
+explicitly specifying the template arguments.
+- **std::optional, std::variant, and std::any**: provides better ways to handle optional values,
+variant types, and type-safe unions respectively.
+- **Improved and expanded STL**: numerous additions such as the filesystem library, parallel
+algorithms, new string conversion functions and more...
+- **Nested namespaces**: allows nesting of namespaces in a single statement.
+- **Removal of deprecated features**: removed features such as std::auto_ptr, std::random_shuffle,
+and the register keyword.
+- **New attributes**: new standard attributes like \[\[fallthrough]], \[\[nodiscard]],
+and \[\[maybe_unused]] were added to communicate intent more clearly.
+- **Direct list initialisation of enums**: allows more type-safe code by allowing enums to be
+directly list-initialised.
 
 ## C++ 20
 
