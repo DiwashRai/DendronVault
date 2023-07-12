@@ -109,6 +109,11 @@ possible to represent 5 seconds with something like `5_s` now.
 Another significant update to C++. Many new language features introduced, library components, and
 improved performance in certain areas.
 
+C++17 contiued the modernisation of C++, focusing not just on performance but also on simplifying
+the language, improving its consistency, and making it more expressive. Its impact on performance
+and idiomatic C++ are seen in the adoption of new practices that leverage these features, which
+provide more compile-time checks, clearer intentions, and better abstractions.
+
 - **Structured bindings**: allows declaration of multiple variables initialised from a tuple or
 struct in a single statement. Makes code more compact and readable.
 - **If and Switch with initialiser**: can now declare a variable in the same statement as an if or
