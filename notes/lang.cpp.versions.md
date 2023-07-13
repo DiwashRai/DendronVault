@@ -106,8 +106,8 @@ possible to represent 5 seconds with something like `5_s` now.
 - **Improved STL**: addtional extensions to the STL.
 
 ## C++ 17
-Another significant update to C++. Many new language features introduced, library components, and
-improved performance in certain areas.
+Neither a small or large update to C++. Many new language features introduced, library components,
+and improved performance in certain areas.
 
 C++17 contiued the modernisation of C++, focusing not just on performance but also on simplifying
 the language, improving its consistency, and making it more expressive. Its impact on performance
@@ -139,5 +139,75 @@ and \[\[maybe_unused]] were added to communicate intent more clearly.
 directly list-initialised.
 
 ## C++ 20
+A major update that brought an abundance of powerful and expressive features to the language. It
+is considered one of the most significant updates to the C++ standard, comparable to C++11 in the
+breadth and depth of its changes. C++20 strides towards making the language safer, simpler more
+efficient, and more expressive, resulting in better performance and more idiomatic code.
+
+- **Concepts**: new form of compile-time duck typing. Represents named set of requirements such as
+syntactic requirements, semantic requirements, and type requirements.
+- **Ranges**: new library that provides components for handling ranges of values. Builds upon the
+iterator concept allowing for more expressive code.
+- **Coroutines**: Generalisation of subroutines. Used for computations that can be suspended and
+resumed. This can lead to more efficient and simpler asynchronous code.
+- **Modules**: New way to package code which can lead to faster compilation times, improved
+encapsulation and isolation, ease of use, and better tooling.
+- **Three-way comparison (Spaceship) operator `<=>`**: Simplifies writing comparison operators for
+user defined typed.
+- **Calendar & Timezone library**: New standard library to handle dates, times, and timezones.
+- **Format library**: New type-safe printf-like library for text formatting.
+- **Expanded constexpr**: more of the STL can be used in constexpr contexts.
+- **New standard attributes**: Likely and unlikely attributes were added to give the programmer the
+ability to provide compiler with branch prediction information.
+- **constexpr dynamic allocation**: Allows dynamic allocation in consexpr contexts with limitations
+to ensure compuations are still performed at compile time.
+- **Feature-test macros:**: Macros that test whether a certain feature is available in current C++
+environment.
+- **std::span**: A new object to provide a lightweight, non-owning reference to a sequence, or a
+part of a sequence.
 
 ## C++ 23
+The latest update to C++. Seems like this update fully achieves what C++20 set out to do. This
+probably means it does not count as one of the land mark C++ updates, but still not a small one.
+
+**Core language changes:**
+- **Deducing `this`**:
+- **if consteval**:
+- **Attributes for lambdas**:
+- **std::size_t literals**:
+- **auto(x) decay-copy in the language**:
+- **#elifdef, #elifndef, and #warning**:
+- **std::unreachable**:
+- **Assumptions**:
+- **Named universal character escapes**:
+- **Trim whitespace before line splicing**:
+- **static operator()**:
+
+**C++ Standard Library:**
+- **String formatting improvements**:
+- **STL modules**:
+- **std::flat_(multi)map and std::flat_(multi)set**:
+- **std::mdspan**:
+- **std::generator**:
+- **basic_string::contains and basic_string_view::contains**:
+- **construct string_view from nullptr**:
+- **basic_string::resize_and_overwrite()**:
+- **Monadic interface for std::optional**:
+- **std::stacktrace**:
+- **Changes to Ranges library**:
+- **Changes to Views library**:
+- **std::expected**:
+- **std::move_only_function<>**:
+- **std::spanstream**:
+- **std::byteswap**:
+- **std::to_underlying**:
+- **Associative containers heterogeneous erasure**:
+
+**Others (not sure)**:
+- **std::out_ptr, std::inout_ptr**:
+- **constexpr std::unique_ptr**:
+- **std::print**:
+- **Formatted ranges**:
+- **std::is_scoped_enum**:
+- **Multi-dimenstional index operator**:
+- **constexpr for cmath**:
