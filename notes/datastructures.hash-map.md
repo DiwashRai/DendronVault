@@ -2,7 +2,7 @@
 id: azirqu78s4pdbsosv0gqakm
 title: Hash Map
 desc: ''
-updated: 1682274995012
+updated: 1689523040829
 created: 1682274863093
 ---
 
@@ -24,10 +24,6 @@ public:
     const V& operator[](const K& key) const;
     V& at(const K& key);
     const V& at(const K& key) const;
-    V& front();
-    const V& front() const;
-    V& back();
-    const V& back() const;
     bool contains(const K& key) const;
 
     // capacity
