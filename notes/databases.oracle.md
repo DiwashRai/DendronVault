@@ -2,7 +2,7 @@
 id: tn0a5nqbrce9yebvej9h736
 title: Oracle
 desc: ''
-updated: 1680917132952
+updated: 1689939591871
 created: 1677666402987
 ---
 
@@ -74,4 +74,22 @@ drop pluggable database XEPDB4 including datafiles;
 show con_name
 alter session set container = mypdb2;
 show con_name
+```
+
+### check oracle 21 xe pdb data usage
+
+```
+SELECT pdb_name, used_bytes/1024/1024/1024 "Used GB", 
+       max_bytes/1024/1024/1024 "Max GB" 
+FROM cdb_pdbs, 
+     (SELECT con_id, sum(bytes) used_bytes 
+      FROM   cdb_segments 
+      WHERE  con_id > 2 
+      GROUP BY con_id) seg_used, 
+     (SELECT con_id, max(bytes) max_bytes 
+      FROM   cdb_data_files 
+      WHERE  con_id > 2 
+      GROUP BY con_id) df_max 
+WHERE  cdb_pdbs.con_id = seg_used.con_id(+) 
+AND    cdb_pdbs.con_id = df_max.con_id(+);
 ```

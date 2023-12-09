@@ -2,9 +2,17 @@
 id: hp7jv15215pi0s92tkgr4ob
 title: Cmake
 desc: ''
-updated: 1675166835434
+updated: 1688259552869
 created: 1665227552280
 ---
+
+## building and existing project cheatsheet
+
+vcpkg toolchain file if needed:
+```
+cmake -B <build dir> -S <source dir> -DCMAKE_BUILD_TYPE=Debug -DCMAKE_TOOLCHAIN_FILE=<path to vcpkg>/scripts/buildsystems/vcpkg.cmake
+cmake --build <build dir>
+```
 
 ## Modern CMake in a nutshell
 

@@ -2,9 +2,20 @@
 id: hnokl3pj1g9ptdn1ivmpk9o
 title: Tmux
 desc: ''
-updated: 1676418114051
+updated: 1688256793540
 created: 1676205333563
 ---
+
+### install
+- `sudo dnf install tmux`
+- Install tmux plugin manager
+  - `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
+- ensure tmux conf exists at '~/.config/tmux/tmux.conf'
+  - cd .dotfiles
+  - stow tmux
+- Install plugins
+  - `tmux source ~/.tmux.conf`
+  - `prefix + I` (capital i, as in Install) to fetch the plugin
 
 ### Cheat sheet
 **New session**
