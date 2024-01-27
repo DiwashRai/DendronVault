@@ -2,7 +2,7 @@
 id: 055m861v4j7qqpextyt7zak
 title: Poetry
 desc: ''
-updated: 1702686555290
+updated: 1702751697547
 created: 1702686356865
 ---
 
@@ -27,5 +27,19 @@ poetry-demo
 ## Initialise pre-existing project
 `poetry init`
 
+## Poetry venvs in project itself
+`poetry config virtualenvs.in-project true`
+
 ## Install dependencies
 `poetry install`
+Also makes it possible to run the program with a start script
+
+## Activate virtual env in current shell
+`poetry shell`
+
+## Add dependency
+```
+poetry shell
+poetry add textual
+poetry add textual-dev --group dev
+```
