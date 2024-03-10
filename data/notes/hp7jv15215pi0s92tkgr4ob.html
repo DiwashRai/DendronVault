@@ -1,0 +1,73 @@
+<h1 id="cmake">Cmake<a aria-hidden="true" class="anchor-heading icon-link" href="#cmake"></a></h1>
+<h2 id="building-and-existing-project-cheatsheet">building and existing project cheatsheet<a aria-hidden="true" class="anchor-heading icon-link" href="#building-and-existing-project-cheatsheet"></a></h2>
+<p>vcpkg toolchain file if needed:</p>
+<pre><code>cmake -B &#x3C;build dir> -S &#x3C;source dir> -DCMAKE_BUILD_TYPE=Debug -DCMAKE_TOOLCHAIN_FILE=&#x3C;path to vcpkg>/scripts/buildsystems/vcpkg.cmake
+cmake --build &#x3C;build dir>
+</code></pre>
+<h2 id="modern-cmake-in-a-nutshell">Modern CMake in a nutshell<a aria-hidden="true" class="anchor-heading icon-link" href="#modern-cmake-in-a-nutshell"></a></h2>
+<ul>
+<li>Declare your module with ADD_LIBRARY or ADD_EXECUTABLE  </li>
+<li>Declare your build flags with TARGET_xxx()  </li>
+<li>Declare your dependencies with TARGET_LINK_LIBRARIES  
+<ul>
+<li>Works for linking directly to libary</li>
+<li>and for linking to module with a project with interface</li>
+</ul>
+</li>
+<li>Specify what is public and private</li>
+</ul>
+<h3 id="global-setup">Global setup<a aria-hidden="true" class="anchor-heading icon-link" href="#global-setup"></a></h3>
+<ul>
+<li>Use at least version 3.0</li>
+<li>Some flags should still be declared at the top level that you want everywhere. E.g. -Wall -Werror</li>
+</ul>
+<pre class="language-cmake"><code class="language-cmake"><span class="token keyword">cmake_minimum_required</span><span class="token punctuation">(</span><span class="token property">VERSION</span> <span class="token number">3.0</span><span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">MSVC</span><span class="token punctuation">)</span>
+    <span class="token keyword">add_compile_options</span><span class="token punctuation">(</span>/W3 /WX<span class="token punctuation">)</span>
+<span class="token keyword">else</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">add_compile_options</span><span class="token punctuation">(</span>-W -Wall -Werror<span class="token punctuation">)</span>
+<span class="token keyword">endif</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="delcare-your-module">Delcare your module<a aria-hidden="true" class="anchor-heading icon-link" href="#delcare-your-module"></a></h3>
+<pre class="language-cmake"><code class="language-cmake"><span class="token keyword">add_library</span><span class="token punctuation">(</span>mylib
+    src/file1.cpp
+    src/file2.cpp
+    ...<span class="token punctuation">)</span>
+</code></pre>
+<h3 id="declare-your-flags">Declare your flags<a aria-hidden="true" class="anchor-heading icon-link" href="#declare-your-flags"></a></h3>
+<pre class="language-cmake"><code class="language-cmake"><span class="token keyword">target_include_directories</span><span class="token punctuation">(</span>mylib <span class="token namespace">PUBLIC</span> include<span class="token punctuation">)</span>
+<span class="token keyword">target_include_directories</span><span class="token punctuation">(</span>mylib <span class="token namespace">PRIVATE</span> src<span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span>SOME_SETTING<span class="token punctuation">)</span>
+    <span class="token keyword">target_compile_definitions</span><span class="token punctuation">(</span>mylib
+            <span class="token namespace">PUBLIC</span> WITH_SOME_SETTING<span class="token punctuation">)</span>
+<span class="token keyword">endif</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="declare-your-dependencies">Declare your dependencies<a aria-hidden="true" class="anchor-heading icon-link" href="#declare-your-dependencies"></a></h3>
+<pre class="language-cmake"><code class="language-cmake"><span class="token comment"># Public (interface) dependencies</span>
+<span class="token keyword">target_link_libraries</span><span class="token punctuation">(</span>mylib <span class="token namespace">PUBLIC</span> abc<span class="token punctuation">)</span>
+
+<span class="token comment"># Private (implementation) dependencies</span>
+<span class="token keyword">target_link_libraries</span><span class="token punctuation">(</span>mylib <span class="token namespace">PRIVATE</span> xyz<span class="token punctuation">)</span>
+</code></pre>
+<h3 id="header-only-libraries">Header-only libraries<a aria-hidden="true" class="anchor-heading icon-link" href="#header-only-libraries"></a></h3>
+<pre class="language-cmake"><code class="language-cmake"><span class="token keyword">add_library</span><span class="token punctuation">(</span>mylib <span class="token namespace">INTERFACE</span><span class="token punctuation">)</span>
+
+<span class="token keyword">target_include_directories</span><span class="token punctuation">(</span>mylib <span class="token namespace">INTERFACE</span> include<span class="token punctuation">)</span>
+
+<span class="token keyword">target_link_libraries</span><span class="token punctuation">(</span>mylib <span class="token namespace">INTERFACE</span> <span class="token inserted class-name">Boost::Boost</span><span class="token punctuation">)</span>
+</code></pre>
+<h2 id="anti-patterns">Anti-patterns<a aria-hidden="true" class="anchor-heading icon-link" href="#anti-patterns"></a></h2>
+<ul>
+<li>Don't use macros that affect all targets
+<ul>
+<li>INCLUDE_DIRECTORIES()</li>
+<li>ADD_DEFINITIONS()</li>
+<li>LINK_LIBRARIES</li>
+</ul>
+</li>
+<li>Don't use TARGET_INCLUDE_DIRECTORIES() with a path outside your module</li>
+<li>Don't use TARGET_LINK_LIBRARIES() without specifying PUBLIC, PRIVATE or INTERFACE</li>
+<li>Don't use TARGET_COMPILE_OPTIONS() to set flats that affect the ABI</li>
+</ul>

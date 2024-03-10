@@ -1,0 +1,176 @@
+<h1 id="additional-setup">Additional Setup<a aria-hidden="true" class="anchor-heading icon-link" href="#additional-setup"></a></h1>
+<h2 id="install-nerd-fonts">install nerd fonts<a aria-hidden="true" class="anchor-heading icon-link" href="#install-nerd-fonts"></a></h2>
+<p>Download JetBrains at least</p>
+<ul>
+<li>download nerd fonts from <a href="https://www.nerdfonts.com/font-downloads">here</a></li>
+<li>mkdir <code>~/.local/share/fonts</code></li>
+<li><code>unzip JetBrainsMono.zip -d ~/.local/share/fonts</code></li>
+</ul>
+<h2 id="zsh">zsh<a aria-hidden="true" class="anchor-heading icon-link" href="#zsh"></a></h2>
+<ul>
+<li><code>sudo dnf install zsh</code>
+<ul>
+<li><code>sudo dnf install util-linux-user</code></li>
+<li><code>chsh -s $(which zsh)</code></li>
+<li>setup zsh settings upon first login
+<ul>
+<li>history
+<ul>
+<li>HISTSIZE=10000</li>
+<li>SAVEHIST=10000
+<ul>
+<li>HISTFILE=~/.zsh_history</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>completion system
+<ul>
+<li>default</li>
+</ul>
+</li>
+<li>key bindings (vi or emacs)
+<ul>
+<li>vi</li>
+</ul>
+</li>
+<li>other shell options
+<ul>
+<li>unset beep</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>install powerline10k</li>
+</ul>
+<h2 id="other-packages">other packages<a aria-hidden="true" class="anchor-heading icon-link" href="#other-packages"></a></h2>
+<ul>
+<li><code>sudo dnf install tmux</code></li>
+<li><code>sudo dnf install dmenu</code></li>
+<li><code>sudo dnf install neovim python3-neovim</code></li>
+<li><code>sudo dnf install vlc</code></li>
+<li>lazygit</li>
+</ul>
+<h2 id="install-brave-browser">install brave browser<a aria-hidden="true" class="anchor-heading icon-link" href="#install-brave-browser"></a></h2>
+<ul>
+<li><code>sudo dnf install dnf-plugins-core</code></li>
+<li><code>sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/</code></li>
+<li><code>sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc</code></li>
+<li><code>sudo dnf install brave-browser brave-keyring</code></li>
+</ul>
+<h2 id="monitor-output-stuff">monitor output stuff<a aria-hidden="true" class="anchor-heading icon-link" href="#monitor-output-stuff"></a></h2>
+<ul>
+<li>xrandr</li>
+<li>arandr</li>
+<li>autorandr
+Use arandr to apply the layout. Use autorandr to save the profile.</li>
+</ul>
+<h2 id="networking">networking<a aria-hidden="true" class="anchor-heading icon-link" href="#networking"></a></h2>
+<ul>
+<li>Fedora uses NetworkManager by default so these commands are probably not necessary
+<ul>
+<li><code>sudo dnf install NetworkManager-tui</code></li>
+<li><code>sudo systemctl enable NetworkManager</code></li>
+<li><code>sudo systemctl start NetworkManager</code></li>
+</ul>
+</li>
+<li>If you decide to use NetworkManager you can also use the applet
+<ul>
+<li><code>sudo dnf install NetworkManager-applet</code></li>
+<li><code>nm-applet &#x26;</code> in qtile config. Requires a notification daemon to be running</li>
+</ul>
+</li>
+</ul>
+<h2 id="notifications">notifications<a aria-hidden="true" class="anchor-heading icon-link" href="#notifications"></a></h2>
+<ul>
+<li><code>sudo dnf install dunst</code></li>
+</ul>
+<h2 id="touchpad-settings">touchpad settings<a aria-hidden="true" class="anchor-heading icon-link" href="#touchpad-settings"></a></h2>
+<ul>
+<li>ensure following packages are installed
+<ul>
+<li><code>sudo dnf install libinput libinput-utils</code></li>
+</ul>
+</li>
+<li>create <code>/etc/X11/xorg.conf.d/30-touchpad.conf</code> with the following contents:</li>
+</ul>
+<pre class="language-conf"><code class="language-conf">Section "InputClass"
+    Identifier "libinput touchpad catchall"
+    MatchIsTouchpad "on"
+    MatchDevicePath "/dev/input/event*"
+    Driver "libinput"
+    Option "Tapping" "on"
+    Option "NaturalScrolling" "true"
+    Option "ScrollPixelDistance" "25"
+    Option "ClickMethod" "clickfinger"
+    Option "TappingButtonMap" "lrm"
+    Option "AccelProfile" "adaptive"
+    Option "AccelSpeed" "0.2"
+    Option "DisableWhileTyping" "true"
+EndSection
+</code></pre>
+<h2 id="keyboard-settings">keyboard settings<a aria-hidden="true" class="anchor-heading icon-link" href="#keyboard-settings"></a></h2>
+<ul>
+<li>remap caps to ctrl
+<ul>
+<li><code>cd /etc/X11/xorg.conf.d</code></li>
+<li><code>sudo vim 00-keyboard.conf</code></li>
+<li>add the following to the file</li>
+</ul>
+</li>
+</ul>
+<pre class="language-conf"><code class="language-conf">Section "InputClass"
+        Identifier "system-keyboard"
+        MatchIsKeyboard "on"
+        Option "XkbOptions" "ctrl:nocaps"
+EndSection
+</code></pre>
+<ul>
+<li>For switching keyboard layouts
+<ul>
+<li>sudo dnf install setxkbmap</li>
+<li>and use rofi script to switch layouts in scripts dir from .dotfiles</li>
+</ul>
+</li>
+</ul>
+<h2 id="rofi">rofi<a aria-hidden="true" class="anchor-heading icon-link" href="#rofi"></a></h2>
+<ul>
+<li><code>sudo dnf install rofi</code></li>
+<li><code>rofi-theme-selector</code> to select a theme</li>
+<li>setup scripts
+<ul>
+<li>powermenu script</li>
+<li>quick_access script</li>
+<li>confedit script</li>
+</ul>
+</li>
+</ul>
+<h2 id="dev-related-setup">dev related setup<a aria-hidden="true" class="anchor-heading icon-link" href="#dev-related-setup"></a></h2>
+<ul>
+<li>vs code
+<ul>
+<li><a href="https://code.visualstudio.com/docs/setup/linux">vs code setup</a></li>
+</ul>
+</li>
+<li>cmake</li>
+<li>vcpkg
+<ul>
+<li><a href="https://vcpkg.io/en/getting-started.html">vcpkg setup</a></li>
+<li>general steps:
+<ul>
+<li>git clone</li>
+<li>bootstrap script</li>
+<li>vcpkg install catch2:x64-linux</li>
+<li>vcpkg install benchmark:x64-linux</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/DendronVault/notes/d7p64g6cgi98y6dyktth97g">Setup</a></li>
+</ul>

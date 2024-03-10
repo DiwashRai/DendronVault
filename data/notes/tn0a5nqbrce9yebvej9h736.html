@@ -1,0 +1,70 @@
+<h1 id="oracle">Oracle<a aria-hidden="true" class="anchor-heading icon-link" href="#oracle"></a></h1>
+<h3 id="export-a-database-dump">Export a database dump<a aria-hidden="true" class="anchor-heading icon-link" href="#export-a-database-dump"></a></h3>
+<pre class="language-shell"><code class="language-shell">exp <span class="token operator">&#x3C;</span>user<span class="token operator">></span>/<span class="token operator">&#x3C;</span>password<span class="token operator">></span>@<span class="token operator">&#x3C;</span>pluggableDB<span class="token operator">></span>
+buffer size: <span class="token number">4096</span> <span class="token operator">></span>
+<span class="token builtin class-name">export</span> file: EXPDAT<span class="token operator">></span>DMP <span class="token operator">></span> myDump.dmp
+<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> Entire database <span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span> Users, or <span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>Tables <span class="token builtin class-name">:</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>Users <span class="token operator">></span>
+Export grants <span class="token punctuation">(</span>yes/no<span class="token punctuation">)</span>: <span class="token function">yes</span> <span class="token operator">></span>
+Export table data <span class="token punctuation">(</span>yes/no<span class="token punctuation">)</span>: <span class="token function">yes</span> <span class="token operator">></span>
+Compress extents <span class="token punctuation">(</span>yes/no<span class="token punctuation">)</span>: <span class="token function">yes</span> <span class="token operator">></span>
+Export <span class="token keyword">done</span> <span class="token keyword">in</span> WE8MSWIM1252 character set<span class="token punctuation">..</span>.
+User to be exported: <span class="token punctuation">(</span>RETURN to quit<span class="token punctuation">)</span> <span class="token operator">></span> schema_user
+exporting<span class="token punctuation">..</span>.
+</code></pre>
+<h3 id="create-a-new-pluggable-database-oracle-21c">Create a new pluggable database (oracle 21c)<a aria-hidden="true" class="anchor-heading icon-link" href="#create-a-new-pluggable-database-oracle-21c"></a></h3>
+<pre class="language-shell"><code class="language-shell">
+sqlplus / as sysdba
+
+CREATE PLUGGABLE DATABASE salespdb
+  ADMIN <span class="token environment constant">USER</span> salesadm IDENTIFIED BY password
+  ROLES <span class="token operator">=</span> <span class="token punctuation">(</span>dba<span class="token punctuation">)</span>
+  DEFAULT TABLESPACE sales
+    DATAFILE <span class="token string">'/disk1/oracle/dbs/salespdb/sales01.dbf'</span> SIZE 250M AUTOEXTEND ON
+  FILE_NAME_CONVERT <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token string">'/disk1/oracle/dbs/pdbseed/'</span>,
+                       <span class="token string">'/disk1/oracle/dbs/salespdb/'</span><span class="token punctuation">)</span>
+  STORAGE <span class="token punctuation">(</span>MAXSIZE 2G<span class="token punctuation">)</span>
+  PATH_PREFIX <span class="token operator">=</span> <span class="token string">'/disk1/oracle/dbs/salespdb/'</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="list-pluggable-databases">List pluggable databases<a aria-hidden="true" class="anchor-heading icon-link" href="#list-pluggable-databases"></a></h3>
+<pre class="language-shell"><code class="language-shell">COLUMN NAME FORMAT A8
+
+SELECT NAME, CON_ID, DBID, CON_UID, GUID FROM V<span class="token variable">$CONTAINERS</span> ORDER BY CON_ID<span class="token punctuation">;</span>
+</code></pre>
+<h3 id="show-open-mode-status-of-pluggable-databases">Show open mode status of pluggable databases<a aria-hidden="true" class="anchor-heading icon-link" href="#show-open-mode-status-of-pluggable-databases"></a></h3>
+<pre class="language-shell"><code class="language-shell">COLUMN NAME FORMAT A15
+COLUMN RESTRICTED FORMAT A10
+COLUMN OPEN_TIME FORMAT A30
+SELECT NAME, OPEN_MODE, RESTRICTED, OPEN_TIME from V<span class="token variable">$PDBS</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="change-pdb-to-read-write">change pdb to READ WRITE<a aria-hidden="true" class="anchor-heading icon-link" href="#change-pdb-to-read-write"></a></h3>
+<pre class="language-shell"><code class="language-shell">ALTER PLUGGABLE DATABASE XEPDB4 OPEN READ WRITE<span class="token punctuation">;</span>
+</code></pre>
+<h3 id="save-pdb-state-so-you-dont-have-to-manually-open">save pdb state so you don't have to manually open<a aria-hidden="true" class="anchor-heading icon-link" href="#save-pdb-state-so-you-dont-have-to-manually-open"></a></h3>
+<pre class="language-shell"><code class="language-shell">ALTER PLUGGABLE DATABASE XEPDB4 SAVE STATE<span class="token punctuation">;</span>
+</code></pre>
+<h3 id="deleting-a-pluggable-database">deleting a pluggable database<a aria-hidden="true" class="anchor-heading icon-link" href="#deleting-a-pluggable-database"></a></h3>
+<pre class="language-shell"><code class="language-shell">sqlplus / as sysdba
+
+alter pluggable database XEPDB4 close<span class="token punctuation">;</span>
+drop pluggable database XEPDB4 including datafiles<span class="token punctuation">;</span>
+</code></pre>
+<h3 id="switching-session-container">switching session container<a aria-hidden="true" class="anchor-heading icon-link" href="#switching-session-container"></a></h3>
+<pre class="language-shell"><code class="language-shell">show con_name
+alter session <span class="token builtin class-name">set</span> container <span class="token operator">=</span> mypdb2<span class="token punctuation">;</span>
+show con_name
+</code></pre>
+<h3 id="check-oracle-21-xe-pdb-data-usage">check oracle 21 xe pdb data usage<a aria-hidden="true" class="anchor-heading icon-link" href="#check-oracle-21-xe-pdb-data-usage"></a></h3>
+<pre><code>SELECT pdb_name, used_bytes/1024/1024/1024 "Used GB", 
+       max_bytes/1024/1024/1024 "Max GB" 
+FROM cdb_pdbs, 
+     (SELECT con_id, sum(bytes) used_bytes 
+      FROM   cdb_segments 
+      WHERE  con_id > 2 
+      GROUP BY con_id) seg_used, 
+     (SELECT con_id, max(bytes) max_bytes 
+      FROM   cdb_data_files 
+      WHERE  con_id > 2 
+      GROUP BY con_id) df_max 
+WHERE  cdb_pdbs.con_id = seg_used.con_id(+) 
+AND    cdb_pdbs.con_id = df_max.con_id(+);
+</code></pre>

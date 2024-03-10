@@ -1,0 +1,8 @@
+
+### windows
+```shell
+certutil -hashfile "filename.exe" MD5
+certutil -hashfile "filename.exe" SHA1
+certutil -hashfile "filename.exe" SHA256
+certutil -hashfile "filename.exe" SHA512
+```

@@ -1,0 +1,7 @@
+<h1 id="windows">Windows<a aria-hidden="true" class="anchor-heading icon-link" href="#windows"></a></h1>
+<h3 id="windows-11-restore-old-right-click-menu-as-default">windows 11 restore old right click menu as default<a aria-hidden="true" class="anchor-heading icon-link" href="#windows-11-restore-old-right-click-menu-as-default"></a></h3>
+<pre class="language-shell"><code class="language-shell">reg.exe <span class="token function">add</span> <span class="token string">"HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32"</span> /f /ve
+</code></pre>
+<p>To undo</p>
+<pre class="language-shell"><code class="language-shell">reg.exe delete <span class="token string">"HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}"</span> /f
+</code></pre>

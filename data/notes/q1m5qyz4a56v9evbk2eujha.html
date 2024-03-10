@@ -1,0 +1,25 @@
+<h1 id="move-semantics">Move Semantics<a aria-hidden="true" class="anchor-heading icon-link" href="#move-semantics"></a></h1>
+<h2 id="summary">Summary<a aria-hidden="true" class="anchor-heading icon-link" href="#summary"></a></h2>
+<p>Prior to C++ 11, if you wanted to get an object from one place to another, you would have to create a throwaway object that you wanted to just pass into a function.
+Move Semantics allows you to just move an object without creating unnecessary objects.</p>
+<h2 id="move-constructor">Move constructor<a aria-hidden="true" class="anchor-heading icon-link" href="#move-constructor"></a></h2>
+<ul>
+<li>Point new object to old object's data</li>
+<li>Point old object to nullptr</li>
+</ul>
+<h2 id="move-assignment-operator">Move assignment operator<a aria-hidden="true" class="anchor-heading icon-link" href="#move-assignment-operator"></a></h2>
+<ul>
+<li>Check 'other' object does not equal 'this'</li>
+</ul>
+<pre class="language-cpp"><code class="language-cpp"><span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span> <span class="token operator">==</span> <span class="token operator">&#x26;</span>other<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token operator">*</span><span class="token keyword">this</span><span class="token punctuation">;</span>
+</code></pre>
+<ul>
+<li>delete current data</li>
+<li>point 'this.data' to 'other.data'</li>
+<li>return *this</li>
+</ul>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/DendronVault/notes/ye47jxon8i7r302swio082v">Lvalues and Rvalues</a></li>
+</ul>

@@ -1,0 +1,33 @@
+<h1 id="raspberry-pi">Raspberry Pi<a aria-hidden="true" class="anchor-heading icon-link" href="#raspberry-pi"></a></h1>
+<h3 id="details">details<a aria-hidden="true" class="anchor-heading icon-link" href="#details"></a></h3>
+<p><strong>Ethernet:</strong><br>
+192.168.0.23<br>
+pi/diwashrai  </p>
+<p><strong>Wi-Fi:</strong><br>
+192.168.0.39<br>
+pi/diwashrai  </p>
+<h3 id="login">login<a aria-hidden="true" class="anchor-heading icon-link" href="#login"></a></h3>
+<p>Normal verbose  </p>
+<pre class="language-shell"><code class="language-shell"><span class="token function">ssh</span> pi@192.168.0.23
+</code></pre>
+<p>Quick</p>
+<pre class="language-shell"><code class="language-shell"><span class="token function">ssh</span> pi
+<span class="token function">ssh</span> pi-wifi
+</code></pre>
+<p>uses values from ~/.ssh/config</p>
+<h3 id="copy-ssh-keypair-to-server">Copy ssh keypair to server<a aria-hidden="true" class="anchor-heading icon-link" href="#copy-ssh-keypair-to-server"></a></h3>
+<p><code>ssh-copy-id pi@192.168.0.23</code><br>
+Enter your password. Done  </p>
+<h3 id="nas-start-up">NAS start up<a aria-hidden="true" class="anchor-heading icon-link" href="#nas-start-up"></a></h3>
+<pre class="language-shell"><code class="language-shell"><span class="token function">sudo</span> <span class="token function">mount</span> /dev/sda /mnt/nas
+</code></pre>
+<h3 id="wifi-settings">wifi settings<a aria-hidden="true" class="anchor-heading icon-link" href="#wifi-settings"></a></h3>
+<p>Might need to select country</p>
+<pre class="language-shell"><code class="language-shell"><span class="token function">ssh</span> pi
+<span class="token function">sudo</span> raspi-config
+<span class="token number">5</span>. Localisation options
+WLAN country
+</code></pre>
+<p>Or might just need to use rfkill</p>
+<pre class="language-shell"><code class="language-shell">rfkill unblock wifi
+</code></pre>

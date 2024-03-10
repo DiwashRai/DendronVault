@@ -1,0 +1,208 @@
+<h1 id="versions">Versions<a aria-hidden="true" class="anchor-heading icon-link" href="#versions"></a></h1>
+<h1 id="c-evolution-through-the-years">C++ evolution through the years<a aria-hidden="true" class="anchor-heading icon-link" href="#c-evolution-through-the-years"></a></h1>
+<h2 id="pre-98">Pre 98<a aria-hidden="true" class="anchor-heading icon-link" href="#pre-98"></a></h2>
+<p><strong>Early evolution</strong>:</p>
+<ul>
+<li>Bjarne Stroustrup started development of C++ in 1979 at Bell Labs as an enhancement to the C
+language. It was originally named C with Classes but later it was renamed C++ in 1983.</li>
+</ul>
+<p><strong>C with class</strong>:</p>
+<ul>
+<li><strong>Classes</strong>: Introduced user-defined types that encapsulate data and related functions.</li>
+<li><strong>Objects</strong>: Allows creation of objects from classes.</li>
+<li><strong>Data abstraction</strong>: Enabled separation of interface(public members) and implementation(private
+members).</li>
+<li><strong>Member functions</strong>: Functions that can be defined within the class definition and can access
+the class's private and public members.</li>
+<li><strong>Inheritance</strong>: Creation of new classes based on existing classes.</li>
+<li><strong>Constructors &#x26; destructors</strong></li>
+<li><strong>Operator overloading</strong></li>
+<li><strong>Type checking</strong> during compilation</li>
+<li><strong>Inline functions</strong></li>
+</ul>
+<h2 id="c-98">C++ 98<a aria-hidden="true" class="anchor-heading icon-link" href="#c-98"></a></h2>
+<p>The first standardised version of the C++ language. Provided a consistent definition of the
+language that all compilers could adhere to.</p>
+<p><strong>Features</strong>:</p>
+<ul>
+<li><strong>Templates</strong>: Allowed definition of generic classes and functions making code more reusable
+and flexible.</li>
+<li><strong>STL</strong>: The standard template library - a powerful library of template classes and functions.</li>
+<li><strong>Namespaces</strong>: Help organise code and prevent naming conflicts.</li>
+<li><strong>Exceptions</strong>: Provide a way to handle error conditios separate to the main flow of program
+control.</li>
+<li><strong>New casts</strong>: (dynamic_cast, static_cast, reinterpret_cast, const_cast) Safer and more precise
+alternative to C-style casts.</li>
+<li><strong>Boolean type</strong>: 'true' and 'false'</li>
+<li><strong>RTTI</strong>: Run-Time Type Information. Allows information about object's type to be retrieved
+during runtime.</li>
+<li><strong>'auto_ptr' Smart Pointer</strong>: Early version of the smart pointer</li>
+<li><strong>Internationalisation support</strong>: Provided by the <code>&#x3C;locale></code> library.</li>
+</ul>
+<h2 id="c-03">C++ 03<a aria-hidden="true" class="anchor-heading icon-link" href="#c-03"></a></h2>
+<p>Essentially a 'bug fix' version of C++98. Did no introduce any major new features but focused on
+correcting issues and ambiguities identified in C++98 standard.</p>
+<p>The few minor features included were:</p>
+<ul>
+<li><strong>Value initialisation</strong>: Used to ensure objects are intialised even if no explicit initialiser
+is provided.</li>
+<li><strong>Library extensions</strong>: STL was expanded with new functions and existing ones improved.</li>
+<li><strong>Exception specifications</strong>: Clarifications to how exception specs worked. Included "throw
+nothing" by using <code>throw()</code>.</li>
+<li><strong>Keyword <code>export</code></strong>: Difficult to implement and seldom used. Was since removed in C++11.</li>
+</ul>
+<h2 id="c-11">C++ 11<a aria-hidden="true" class="anchor-heading icon-link" href="#c-11"></a></h2>
+<p>Major update to C++ that had a host of new features and improvements. It was a significant
+milestone in the evolution of C++ and made the language more modern, safer and expressive. It
+changed the way programmers wrote code and improved perfomance of C++ applications.</p>
+<p>The changes were significant enough that people refer to modern C++ as a different language to
+compared to pre-C++11.</p>
+<ul>
+<li><strong>Rvalue references and Move semantics</strong>: Allows 'moving' resources instead of copying them.
+Can significantly imporove performance, particularly with alrge data structures.</li>
+<li><strong>Smart pointers</strong>: New memory management tools: <code>shared_ptr</code>, <code>unique_ptr</code> and <code>weak_ptr</code></li>
+<li><strong>Auto keyword</strong>: Allows automatic type deduction which can make code more readable and easier
+to maintain.</li>
+<li><strong>Nullptr keyword</strong>: Replaces the ambiguous <code>NULL</code>.</li>
+<li><strong>Range-based for loops</strong>: Simpler syntax to iterate over collections.</li>
+<li><strong>Initialiser lists</strong>: A new way to initialise objects allowing more compact and intuitive code.</li>
+<li><strong>Lambda expressions</strong>: Feature borrowed from functional languages that make it easier to use
+function objects.</li>
+<li><strong>Concurrency support</strong>: Native support for multithreading including threads, locks and condition
+variables.</li>
+<li><strong>Type inference</strong>: The <code>decltype</code> keyword was introduced, which deduces the type of an
+expression</li>
+<li><strong>Strongly typed enums</strong>: <code>enum class</code> was introduced which is more type-safe than normal enums.</li>
+<li><strong>Deleted and defaulted functions</strong>: Allows for default generation of constructor and assignment
+functions and to delete them when not required.</li>
+<li><strong>Variadic templates</strong>: Allows creation of functions and classes with arbitrary number of
+template parameters in a type-safe way.</li>
+<li><strong>User defined literals</strong>: Enables more readable code by allowing user defined literals.</li>
+</ul>
+<h2 id="c-14">C++ 14<a aria-hidden="true" class="anchor-heading icon-link" href="#c-14"></a></h2>
+<p>A more minor release in comparison to C++11.</p>
+<ul>
+<li><strong>Generalised lambda expressions</strong>: Allows lambdas to deduce the return type of functions and
+introduced generalised capture, which allows capturing of variables by move.</li>
+<li><strong>Binary literals</strong>: Allows binary literals to be specified using the <code>0b</code> prefix.</li>
+<li><strong>Function return type deduction</strong>: The compiler can now deduce the return type of a function.</li>
+<li><strong>Extended constexpr</strong>: Extended <code>constexpr</code> to allow more functions to be evaluated at compile
+time.</li>
+<li><strong>Variable templates</strong>: Allows definition of variables using template parameters.</li>
+<li><strong>Relaxed constraints on constexpr functions</strong>: constexpr functions can now include loops,
+switches etc, allowing for more complex compile time computations.</li>
+<li><strong>Deprecation of auto_ptr</strong>: <code>auto_ptr</code> deprecated and replaced by <code>unique_ptr</code></li>
+<li><strong>Generic lambdas</strong>: lambas can take auto type parameters, making them polymorphic.</li>
+<li><strong>Standard user-defined literals</strong>: Allows defining of new literal ==suffixes==. It is now
+possible to represent 5 seconds with something like <code>5_s</code> now.</li>
+<li><strong>[[deprecated]] Attribute</strong>: Can no mark code as deprecated to show code should not be used.</li>
+<li><strong>Improved STL</strong>: addtional extensions to the STL.</li>
+</ul>
+<h2 id="c-17">C++ 17<a aria-hidden="true" class="anchor-heading icon-link" href="#c-17"></a></h2>
+<p>Neither a small or large update to C++. Many new language features introduced, library components,
+and improved performance in certain areas.</p>
+<p>C++17 contiued the modernisation of C++, focusing not just on performance but also on simplifying
+the language, improving its consistency, and making it more expressive. Its impact on performance
+and idiomatic C++ are seen in the adoption of new practices that leverage these features, which
+provide more compile-time checks, clearer intentions, and better abstractions.</p>
+<ul>
+<li><strong>Structured bindings</strong>: allows declaration of multiple variables initialised from a tuple or
+struct in a single statement. Makes code more compact and readable.</li>
+<li><strong>If and Switch with initialiser</strong>: can now declare a variable in the same statement as an if or
+switch, reducing scope and making code cleaner.</li>
+<li><strong>Inline variables</strong>: Similar to inline functions, inline variables can be defined in headers
+and included in multiple files without violating one definition rule.</li>
+<li><strong>Fold expressions</strong>: simplifies usage of variadic templates by allowing operations to be
+performed on all elements of a parameter pack.</li>
+<li><strong>constexpr if (Compile-time if)</strong>: allows conditional compilation based on template parameters,
+eliminating the need for template specialisations in many cases.</li>
+<li><strong>Template arugment deduction for class templates</strong>: allows template class instantiation without
+explicitly specifying the template arguments.</li>
+<li><strong>std::optional, std::variant, and std::any</strong>: provides better ways to handle optional values,
+variant types, and type-safe unions respectively.</li>
+<li><strong>Improved and expanded STL</strong>: numerous additions such as the filesystem library, parallel
+algorithms, new string conversion functions and more...</li>
+<li><strong>Nested namespaces</strong>: allows nesting of namespaces in a single statement.</li>
+<li><strong>Removal of deprecated features</strong>: removed features such as std::auto_ptr, std::random_shuffle,
+and the register keyword.</li>
+<li><strong>New attributes</strong>: new standard attributes like [[fallthrough]], [[nodiscard]],
+and [[maybe_unused]] were added to communicate intent more clearly.</li>
+<li><strong>Direct list initialisation of enums</strong>: allows more type-safe code by allowing enums to be
+directly list-initialised.</li>
+</ul>
+<h2 id="c-20">C++ 20<a aria-hidden="true" class="anchor-heading icon-link" href="#c-20"></a></h2>
+<p>A major update that brought an abundance of powerful and expressive features to the language. It
+is considered one of the most significant updates to the C++ standard, comparable to C++11 in the
+breadth and depth of its changes. C++20 strides towards making the language safer, simpler more
+efficient, and more expressive, resulting in better performance and more idiomatic code.</p>
+<ul>
+<li><strong>Concepts</strong>: new form of compile-time duck typing. Represents named set of requirements such as
+syntactic requirements, semantic requirements, and type requirements.</li>
+<li><strong>Ranges</strong>: new library that provides components for handling ranges of values. Builds upon the
+iterator concept allowing for more expressive code.</li>
+<li><strong>Coroutines</strong>: Generalisation of subroutines. Used for computations that can be suspended and
+resumed. This can lead to more efficient and simpler asynchronous code.</li>
+<li><strong>Modules</strong>: New way to package code which can lead to faster compilation times, improved
+encapsulation and isolation, ease of use, and better tooling.</li>
+<li><strong>Three-way comparison (Spaceship) operator <code>&#x3C;=></code></strong>: Simplifies writing comparison operators for
+user defined typed.</li>
+<li><strong>Calendar &#x26; Timezone library</strong>: New standard library to handle dates, times, and timezones.</li>
+<li><strong>Format library</strong>: New type-safe printf-like library for text formatting.</li>
+<li><strong>Expanded constexpr</strong>: more of the STL can be used in constexpr contexts.</li>
+<li><strong>New standard attributes</strong>: Likely and unlikely attributes were added to give the programmer the
+ability to provide compiler with branch prediction information.</li>
+<li><strong>constexpr dynamic allocation</strong>: Allows dynamic allocation in consexpr contexts with limitations
+to ensure compuations are still performed at compile time.</li>
+<li><strong>Feature-test macros:</strong>: Macros that test whether a certain feature is available in current C++
+environment.</li>
+<li><strong>std::span</strong>: A new object to provide a lightweight, non-owning reference to a sequence, or a
+part of a sequence.</li>
+</ul>
+<h2 id="c-23">C++ 23<a aria-hidden="true" class="anchor-heading icon-link" href="#c-23"></a></h2>
+<p>The latest update to C++. Seems like this update fully achieves what C++20 set out to do. This
+probably means it does not count as one of the land mark C++ updates, but still not a small one.</p>
+<p><strong>Core language changes:</strong></p>
+<ul>
+<li><strong>Deducing <code>this</code></strong>:</li>
+<li><strong>if consteval</strong>:</li>
+<li><strong>Attributes for lambdas</strong>:</li>
+<li><strong>std::size_t literals</strong>:</li>
+<li><strong>auto(x) decay-copy in the language</strong>:</li>
+<li><strong><a title="Private" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank" class="private">#elifdef (Private)</a>, <a title="Private" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank" class="private">#elifndef (Private)</a>, and <a title="Private" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank" class="private">#warning (Private)</a></strong>:</li>
+<li><strong>std::unreachable</strong>:</li>
+<li><strong>Assumptions</strong>:</li>
+<li><strong>Named universal character escapes</strong>:</li>
+<li><strong>Trim whitespace before line splicing</strong>:</li>
+<li><strong>static operator()</strong>:</li>
+</ul>
+<p><strong>C++ Standard Library:</strong></p>
+<ul>
+<li><strong>String formatting improvements</strong>:</li>
+<li><strong>STL modules</strong>:</li>
+<li><strong>std::flat<em>(multi)map and std::flat</em>(multi)set</strong>:</li>
+<li><strong>std::mdspan</strong>:</li>
+<li><strong>std::generator</strong>:</li>
+<li><strong>basic_string::contains and basic_string_view::contains</strong>:</li>
+<li><strong>construct string_view from nullptr</strong>:</li>
+<li><strong>basic_string::resize_and_overwrite()</strong>:</li>
+<li><strong>Monadic interface for std::optional</strong>:</li>
+<li><strong>std::stacktrace</strong>:</li>
+<li><strong>Changes to Ranges library</strong>:</li>
+<li><strong>Changes to Views library</strong>:</li>
+<li><strong>std::expected</strong>:</li>
+<li><strong>std::move_only_function&#x3C;></strong>:</li>
+<li><strong>std::spanstream</strong>:</li>
+<li><strong>std::byteswap</strong>:</li>
+<li><strong>std::to_underlying</strong>:</li>
+<li><strong>Associative containers heterogeneous erasure</strong>:</li>
+</ul>
+<p><strong>Others (not sure)</strong>:</p>
+<ul>
+<li><strong>std::out_ptr, std::inout_ptr</strong>:</li>
+<li><strong>constexpr std::unique_ptr</strong>:</li>
+<li><strong>std::print</strong>:</li>
+<li><strong>Formatted ranges</strong>:</li>
+<li><strong>std::is_scoped_enum</strong>:</li>
+<li><strong>Multi-dimenstional index operator</strong>:</li>
+<li><strong>constexpr for cmath</strong>:</li>
+</ul>

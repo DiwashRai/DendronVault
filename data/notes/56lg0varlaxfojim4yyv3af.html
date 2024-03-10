@@ -1,0 +1,18 @@
+<h1 id="nvidia-kernel-module-fix">Nvidia Kernel Module Fix<a aria-hidden="true" class="anchor-heading icon-link" href="#nvidia-kernel-module-fix"></a></h1>
+<h3 id="commands-to-run-to-fix">commands to run to fix<a aria-hidden="true" class="anchor-heading icon-link" href="#commands-to-run-to-fix"></a></h3>
+<pre class="language-shell"><code class="language-shell"><span class="token function">sudo</span> dnf remove xorg-x11-drv-nvidia-<span class="token punctuation">\</span>* akmod-nvidia
+<span class="token function">sudo</span> dnf <span class="token function">install</span> akmod-nvidia
+<span class="token function">sudo</span> dnf reinstall kernel<span class="token punctuation">\</span>*
+</code></pre>
+<p>Check the module is built and loaded
+history last should show something like this</p>
+<pre class="language-shell"><code class="language-shell">dnf <span class="token function">history</span> list last
+
+ID     <span class="token operator">|</span> Command line                                                                                            <span class="token operator">|</span> Date and <span class="token function">time</span>    <span class="token operator">|</span> Action<span class="token punctuation">(</span>s<span class="token punctuation">)</span>      <span class="token operator">|</span> Altered
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+    <span class="token number">64</span> <span class="token operator">|</span> -y <span class="token function">install</span> --disablerepo<span class="token operator">=</span>* /tmp/akmods.iy9iafLS/results/kmod-nvidia-6.3.8-200.fc38.x86_64-535.54.03-1.f <span class="token operator">|</span> <span class="token number">2023</span>-07-01 <span class="token number">11</span>:58 <span class="token operator">|</span> Install        <span class="token operator">|</span>    <span class="token number">1</span> EE
+
+<span class="token function">reboot</span>
+</code></pre>
+<h3 id="secure-boot">secure boot<a aria-hidden="true" class="anchor-heading icon-link" href="#secure-boot"></a></h3>
+<p>Even with the above fix, the module not might load. Disable secure boot and it should work.</p>

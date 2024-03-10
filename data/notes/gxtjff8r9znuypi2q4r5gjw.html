@@ -1,0 +1,68 @@
+<h1 id="any">Any<a aria-hidden="true" class="anchor-heading icon-link" href="#any"></a></h1>
+<h3 id="summary">Summary<a aria-hidden="true" class="anchor-heading icon-link" href="#summary"></a></h3>
+<p><code>std::any</code> is a type-safe container for single values of any type introduces as part of C++17.
+It can be thought of as a safer and more convenient alternative to <code>void*</code>. It is similar to
+<code>std::variant</code> but it can hold any type, not just types specified in the template parameters.</p>
+<p>std::any is useful when you need a variable that can hold any type, but you don't know the types at
+compile time. However, it is generally better to avoid such situations if possible, because it
+makes your code more error-prone and harder to understand. If you find yourself using std::any a
+lot, it might be a sign that your code could benefit from more polymorphism or a redesign of your
+data structures.</p>
+<h3 id="typical-usage">Typical usage<a aria-hidden="true" class="anchor-heading icon-link" href="#typical-usage"></a></h3>
+<h4 id="hetereogeneous-vector">Hetereogeneous vector<a aria-hidden="true" class="anchor-heading icon-link" href="#hetereogeneous-vector"></a></h4>
+<p>std::any is useful when you need a variable that can hold any type, but you don't know the types at
+compile time. For example, you might want to create a container that can hold values of any type.</p>
+<pre class="language-cpp"><code class="language-cpp">std<span class="token double-colon punctuation">::</span>vector<span class="token operator">&#x3C;</span>std<span class="token double-colon punctuation">::</span>any<span class="token operator">></span> v<span class="token punctuation">;</span>
+v<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span><span class="token number">12</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+v<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span><span class="token number">3.14f</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+v<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>std<span class="token double-colon punctuation">::</span><span class="token function">string</span><span class="token punctuation">(</span><span class="token string">"hello"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="examples">Examples<a aria-hidden="true" class="anchor-heading icon-link" href="#examples"></a></h3>
+<h4 id="basic-usage">Basic usage<a aria-hidden="true" class="anchor-heading icon-link" href="#basic-usage"></a></h4>
+<p>To retrieve the value from std::any, you need to know the type of the value, and you can use
+std::any_cast to get it:</p>
+<pre class="language-cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&#x3C;iostream></span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&#x3C;any></span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  std<span class="token double-colon punctuation">::</span>any a<span class="token punctuation">;</span>
+  a <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">;</span>
+  std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&#x3C;&#x3C;</span> std<span class="token double-colon punctuation">::</span><span class="token generic-function"><span class="token function">any_cast</span><span class="token generic class-name"><span class="token operator">&#x3C;</span><span class="token keyword">int</span><span class="token operator">></span></span></span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token operator">&#x3C;&#x3C;</span> <span class="token char">'\n'</span><span class="token punctuation">;</span>
+  a <span class="token operator">=</span> <span class="token number">3.14f</span><span class="token punctuation">;</span>
+  std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&#x3C;&#x3C;</span> std<span class="token double-colon punctuation">::</span><span class="token generic-function"><span class="token function">any_cast</span><span class="token generic class-name"><span class="token operator">&#x3C;</span><span class="token keyword">float</span><span class="token operator">></span></span></span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token operator">&#x3C;&#x3C;</span> <span class="token char">'\n'</span><span class="token punctuation">;</span>
+  a <span class="token operator">=</span> std<span class="token double-colon punctuation">::</span><span class="token function">string</span><span class="token punctuation">(</span><span class="token string">"hello"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&#x3C;&#x3C;</span> std<span class="token double-colon punctuation">::</span><span class="token generic-function"><span class="token function">any_cast</span><span class="token generic class-name"><span class="token operator">&#x3C;</span>std<span class="token double-colon punctuation">::</span>string<span class="token operator">></span></span></span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token operator">&#x3C;&#x3C;</span> <span class="token char">'\n'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="stdbad_any_cast">std::bad_any_cast<a aria-hidden="true" class="anchor-heading icon-link" href="#stdbad_any_cast"></a></h4>
+<p>Calling <code>std::any_cast</code> with the wrong type will throw a <code>std::bad_any_cast</code> exception.</p>
+<pre class="language-cpp"><code class="language-cpp">std<span class="token double-colon punctuation">::</span>any a<span class="token punctuation">;</span>
+<span class="token keyword">try</span> <span class="token punctuation">{</span>
+  std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&#x3C;&#x3C;</span> std<span class="token double-colon punctuation">::</span><span class="token generic-function"><span class="token function">any_cast</span><span class="token generic class-name"><span class="token operator">&#x3C;</span><span class="token keyword">float</span><span class="token operator">></span></span></span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token operator">&#x3C;&#x3C;</span> <span class="token char">'\n'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token keyword">const</span> std<span class="token double-colon punctuation">::</span>bad_any_cast<span class="token operator">&#x26;</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&#x3C;&#x3C;</span> e<span class="token punctuation">.</span><span class="token function">what</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&#x3C;&#x3C;</span> <span class="token char">'\n'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="stdany_cast">std::any_cast<a aria-hidden="true" class="anchor-heading icon-link" href="#stdany_cast"></a></h4>
+<p><code>std::any_cast</code> can also be used to check if an <code>std::any</code> holds a particular type.</p>
+<pre class="language-cpp"><code class="language-cpp">std<span class="token double-colon punctuation">::</span>any a <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>std<span class="token double-colon punctuation">::</span><span class="token generic-function"><span class="token function">any_cast</span><span class="token generic class-name"><span class="token operator">&#x3C;</span><span class="token keyword">int</span><span class="token operator">></span></span></span><span class="token punctuation">(</span><span class="token operator">&#x26;</span>a<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&#x3C;&#x3C;</span> <span class="token string">"a holds an int\n"</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="stdany_cast-with-references">std::any_cast with references<a aria-hidden="true" class="anchor-heading icon-link" href="#stdany_cast-with-references"></a></h4>
+<p><code>std::any_cast</code> can also be used to get a reference to the value held by an <code>std::any</code>.</p>
+<pre class="language-cpp"><code class="language-cpp">std<span class="token double-colon punctuation">::</span>any a <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span><span class="token operator">&#x26;</span> i <span class="token operator">=</span> std<span class="token double-colon punctuation">::</span><span class="token generic-function"><span class="token function">any_cast</span><span class="token generic class-name"><span class="token operator">&#x3C;</span><span class="token keyword">int</span><span class="token operator">&#x26;</span><span class="token operator">></span></span></span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+i <span class="token operator">=</span> <span class="token number">42</span><span class="token punctuation">;</span>
+std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&#x3C;&#x3C;</span> std<span class="token double-colon punctuation">::</span><span class="token generic-function"><span class="token function">any_cast</span><span class="token generic class-name"><span class="token operator">&#x3C;</span><span class="token keyword">int</span><span class="token operator">></span></span></span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token operator">&#x3C;&#x3C;</span> <span class="token char">'\n'</span><span class="token punctuation">;</span>
+</code></pre>
+<h4 id="has_value-and-reset">has_value and reset<a aria-hidden="true" class="anchor-heading icon-link" href="#has_value-and-reset"></a></h4>
+<p><code>std::any</code> has a <code>has_value</code> method that returns true if it holds a value and false otherwise.
+It also has a <code>reset</code> method that clears the value it holds.</p>
+<pre class="language-cpp"><code class="language-cpp">std<span class="token double-colon punctuation">::</span>any a <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">;</span>
+std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&#x3C;&#x3C;</span> std<span class="token double-colon punctuation">::</span>boolalpha <span class="token operator">&#x3C;&#x3C;</span> a<span class="token punctuation">.</span><span class="token function">has_value</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&#x3C;&#x3C;</span> <span class="token char">'\n'</span><span class="token punctuation">;</span>
+a<span class="token punctuation">.</span><span class="token function">reset</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// now a doesn't hold a value</span>
+std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&#x3C;&#x3C;</span> std<span class="token double-colon punctuation">::</span>boolalpha <span class="token operator">&#x3C;&#x3C;</span> a<span class="token punctuation">.</span><span class="token function">has_value</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&#x3C;&#x3C;</span> <span class="token char">'\n'</span><span class="token punctuation">;</span>
+</code></pre>

@@ -1,0 +1,2873 @@
+{
+  "notes": {
+    "403": {
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "fname": "403",
+      "id": "403",
+      "title": "This page has not yet sprouted",
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1710039674088,
+      "created": 1710039674088,
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": null,
+      "data": {}
+    },
+    "txvdlk2mbhl2y2muokxxozo": {
+      "id": "txvdlk2mbhl2y2muokxxozo",
+      "title": "Root",
+      "desc": "",
+      "updated": 1664676002873,
+      "created": 1664671276173,
+      "custom": {
+        "nav_order": 0,
+        "permalink": "/"
+      },
+      "fname": "root",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "896d57ab408d13d6cce66d3360a4c1be",
+      "links": [],
+      "anchors": {
+        "quick-access": {
+          "type": "header",
+          "text": "Quick access",
+          "value": "quick-access",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [
+        "akgpjs39sueidxnil3k1feg",
+        "cq5doh4f24evc4ewzhg5yf3",
+        "3xtbw7nonlogrlsu9k2hymz",
+        "lubegqfiz1ik4hq8fnomek2",
+        "uhd2kqv69ly9jb7r0o6dw1t",
+        "155oput5ed55eq5lxuswdw9",
+        "rftnddr5kr2oi9582nrwjxd",
+        "nm541dgoi0njzxnux7it18y",
+        "5fs80ws2li1d12hstqngu4h"
+      ],
+      "parent": null,
+      "data": {}
+    },
+    "5fs80ws2li1d12hstqngu4h": {
+      "id": "5fs80ws2li1d12hstqngu4h",
+      "title": "Windows",
+      "desc": "",
+      "updated": 1678376067388,
+      "created": 1678375928402,
+      "custom": {},
+      "fname": "windows",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "9046a21dc0dd3e4b541664e90e45dd47",
+      "links": [],
+      "anchors": {
+        "windows-11-restore-old-right-click-menu-as-default": {
+          "type": "header",
+          "text": "windows 11 restore old right click menu as default",
+          "value": "windows-11-restore-old-right-click-menu-as-default",
+          "line": 8,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "txvdlk2mbhl2y2muokxxozo",
+      "data": {}
+    },
+    "nm541dgoi0njzxnux7it18y": {
+      "id": "nm541dgoi0njzxnux7it18y",
+      "title": "Tools",
+      "desc": "",
+      "updated": 1675159063061,
+      "created": 1675159063061,
+      "custom": {},
+      "fname": "tools",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "ecc1d4632ded6758236bb49937417bb5",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "acildvugww1my1n5ruojfec",
+        "6w1zsa6tm5l7qqxueht03ps",
+        "hp7jv15215pi0s92tkgr4ob",
+        "6kpo1942ysua78f6grwyijm",
+        "04uwy15ipgua4lzrmnrr5vg",
+        "r2y0vlbadwpwfpyzzsdvr9k",
+        "hs1l77dogz2bmr7wz3sto5x",
+        "lhqlehyuif2q53xmv2q1mq7",
+        "phdf8jn0143ohntpntjx0dh",
+        "lzel0xtqe117z2xkki5gi51",
+        "e7ccw8km6u0an5hyxtkb6zd",
+        "hnokl3pj1g9ptdn1ivmpk9o",
+        "k7cec753w8noenycl10n1lh",
+        "0fi716nmxumrz83tlwkr75n",
+        "s24j0yubtdosu348c8gbgoe"
+      ],
+      "parent": "txvdlk2mbhl2y2muokxxozo",
+      "data": {}
+    },
+    "s24j0yubtdosu348c8gbgoe": {
+      "id": "s24j0yubtdosu348c8gbgoe",
+      "title": "Wsl",
+      "desc": "",
+      "updated": 1702136165837,
+      "created": 1702135881152,
+      "custom": {},
+      "fname": "tools.wsl",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "98b9fd63ecbbc7673a19e3aafed1ea81",
+      "links": [],
+      "anchors": {
+        "wsl2-ubuntu-initial-setup-to-getting-neovim-working": {
+          "type": "header",
+          "text": "wsl2: Ubuntu initial setup to getting neovim working",
+          "value": "wsl2-ubuntu-initial-setup-to-getting-neovim-working",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "nm541dgoi0njzxnux7it18y",
+      "data": {}
+    },
+    "0fi716nmxumrz83tlwkr75n": {
+      "id": "0fi716nmxumrz83tlwkr75n",
+      "title": "Windows Terminal",
+      "desc": "",
+      "updated": 1676504102621,
+      "created": 1676504102621,
+      "custom": {},
+      "fname": "tools.windows-terminal",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "04840adef09d2ebabced33e0df3efcf8",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": "nm541dgoi0njzxnux7it18y",
+      "data": {}
+    },
+    "k7cec753w8noenycl10n1lh": {
+      "id": "k7cec753w8noenycl10n1lh",
+      "title": "Vscode",
+      "desc": "",
+      "updated": 1675159063065,
+      "created": 1675159063065,
+      "custom": {},
+      "fname": "tools.vscode",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "7b871f86b7696efa83df518f7b3fbb3d",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "3r1m1ztnh7xno6m00fnz03t"
+      ],
+      "parent": "nm541dgoi0njzxnux7it18y",
+      "data": {}
+    },
+    "3r1m1ztnh7xno6m00fnz03t": {
+      "id": "3r1m1ztnh7xno6m00fnz03t",
+      "title": "Launch Json",
+      "desc": "",
+      "updated": 1675995618283,
+      "created": 1665342169445,
+      "custom": {},
+      "fname": "tools.vscode.launch-json",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "2b5a6d51a42a64021aebe2966555327c",
+      "links": [],
+      "anchors": {
+        "cpp-debug": {
+          "type": "header",
+          "text": "cpp debug",
+          "value": "cpp-debug",
+          "line": 8,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "k7cec753w8noenycl10n1lh",
+      "data": {}
+    },
+    "hnokl3pj1g9ptdn1ivmpk9o": {
+      "id": "hnokl3pj1g9ptdn1ivmpk9o",
+      "title": "Tmux",
+      "desc": "",
+      "updated": 1688256793540,
+      "created": 1676205333563,
+      "custom": {},
+      "fname": "tools.tmux",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "aee1e59049c0ef7e9dd535e0dd5583bb",
+      "links": [],
+      "anchors": {
+        "install": {
+          "type": "header",
+          "text": "install",
+          "value": "install",
+          "line": 8,
+          "column": 0,
+          "depth": 3
+        },
+        "cheat-sheet": {
+          "type": "header",
+          "text": "Cheat sheet",
+          "value": "cheat-sheet",
+          "line": 19,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "nm541dgoi0njzxnux7it18y",
+      "data": {}
+    },
+    "e7ccw8km6u0an5hyxtkb6zd": {
+      "id": "e7ccw8km6u0an5hyxtkb6zd",
+      "title": "Python",
+      "desc": "",
+      "updated": 1701011313367,
+      "created": 1701011158957,
+      "custom": {},
+      "fname": "tools.python",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "1afa627980482745d8ea8673291613f2",
+      "links": [],
+      "anchors": {
+        "multiple-versions-of-python-on-fedora": {
+          "type": "header",
+          "text": "Multiple versions of Python on Fedora",
+          "value": "multiple-versions-of-python-on-fedora",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        },
+        "running-specific-version-of-python": {
+          "type": "header",
+          "text": "Running specific version of Python",
+          "value": "running-specific-version-of-python",
+          "line": 10,
+          "column": 0,
+          "depth": 3
+        },
+        "getting-and-using-pip-for-specific-version-of-python": {
+          "type": "header",
+          "text": "Getting and using pip for specific version of Python",
+          "value": "getting-and-using-pip-for-specific-version-of-python",
+          "line": 19,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [
+        "055m861v4j7qqpextyt7zak"
+      ],
+      "parent": "nm541dgoi0njzxnux7it18y",
+      "data": {}
+    },
+    "055m861v4j7qqpextyt7zak": {
+      "id": "055m861v4j7qqpextyt7zak",
+      "title": "Poetry",
+      "desc": "",
+      "updated": 1702751697547,
+      "created": 1702686356865,
+      "custom": {},
+      "fname": "tools.python.poetry",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "d77683be6a245bdd32e579a600c73d95",
+      "links": [],
+      "anchors": {
+        "install": {
+          "type": "header",
+          "text": "Install",
+          "value": "install",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        },
+        "setting-up-new-project": {
+          "type": "header",
+          "text": "Setting up new project",
+          "value": "setting-up-new-project",
+          "line": 11,
+          "column": 0,
+          "depth": 2
+        },
+        "initialise-pre-existing-project": {
+          "type": "header",
+          "text": "Initialise pre-existing project",
+          "value": "initialise-pre-existing-project",
+          "line": 26,
+          "column": 0,
+          "depth": 2
+        },
+        "poetry-venvs-in-project-itself": {
+          "type": "header",
+          "text": "Poetry venvs in project itself",
+          "value": "poetry-venvs-in-project-itself",
+          "line": 29,
+          "column": 0,
+          "depth": 2
+        },
+        "install-dependencies": {
+          "type": "header",
+          "text": "Install dependencies",
+          "value": "install-dependencies",
+          "line": 32,
+          "column": 0,
+          "depth": 2
+        },
+        "activate-virtual-env-in-current-shell": {
+          "type": "header",
+          "text": "Activate virtual env in current shell",
+          "value": "activate-virtual-env-in-current-shell",
+          "line": 36,
+          "column": 0,
+          "depth": 2
+        },
+        "add-dependency": {
+          "type": "header",
+          "text": "Add dependency",
+          "value": "add-dependency",
+          "line": 39,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "e7ccw8km6u0an5hyxtkb6zd",
+      "data": {}
+    },
+    "lzel0xtqe117z2xkki5gi51": {
+      "id": "lzel0xtqe117z2xkki5gi51",
+      "title": "Perf",
+      "desc": "",
+      "updated": 1666532513256,
+      "created": 1666531638110,
+      "custom": {},
+      "fname": "tools.perf",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "f93015c485e339d6c5a0d1df0ebdcb20",
+      "links": [],
+      "anchors": {
+        "ensure-cache-misses-printed": {
+          "type": "header",
+          "text": "ensure cache-misses printed",
+          "value": "ensure-cache-misses-printed",
+          "line": 8,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "nm541dgoi0njzxnux7it18y",
+      "data": {}
+    },
+    "phdf8jn0143ohntpntjx0dh": {
+      "id": "phdf8jn0143ohntpntjx0dh",
+      "title": "Obsidian",
+      "desc": "",
+      "updated": 1690034986134,
+      "created": 1690034535802,
+      "custom": {},
+      "fname": "tools.obsidian",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "3dc32efecd1f6afb5ae7c6776abbbace",
+      "links": [],
+      "anchors": {
+        "setup": {
+          "type": "header",
+          "text": "setup",
+          "value": "setup",
+          "line": 8,
+          "column": 0,
+          "depth": 3
+        },
+        "hotkeys": {
+          "type": "header",
+          "text": "hotkeys",
+          "value": "hotkeys",
+          "line": 19,
+          "column": 0,
+          "depth": 3
+        },
+        "css-snippets": {
+          "type": "header",
+          "text": "css snippets",
+          "value": "css-snippets",
+          "line": 23,
+          "column": 0,
+          "depth": 3
+        },
+        "markgone": {
+          "type": "header",
+          "text": "markgone",
+          "value": "markgone",
+          "line": 25,
+          "column": 0,
+          "depth": 4
+        },
+        "vertical-line": {
+          "type": "header",
+          "text": "vertical-line",
+          "value": "vertical-line",
+          "line": 138,
+          "column": 0,
+          "depth": 4
+        }
+      },
+      "children": [],
+      "parent": "nm541dgoi0njzxnux7it18y",
+      "data": {}
+    },
+    "lhqlehyuif2q53xmv2q1mq7": {
+      "id": "lhqlehyuif2q53xmv2q1mq7",
+      "title": "Latex",
+      "desc": "",
+      "updated": 1688656585530,
+      "created": 1688656503636,
+      "custom": {},
+      "fname": "tools.latex",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "dc43a2a8db7d57c2ade5ecba9988e02f",
+      "links": [],
+      "anchors": {
+        "fedora": {
+          "type": "header",
+          "text": "Fedora",
+          "value": "fedora",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        },
+        "install": {
+          "type": "header",
+          "text": "Install",
+          "value": "install",
+          "line": 10,
+          "column": 0,
+          "depth": 3
+        },
+        "compile": {
+          "type": "header",
+          "text": "Compile",
+          "value": "compile",
+          "line": 15,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "nm541dgoi0njzxnux7it18y",
+      "data": {}
+    },
+    "hs1l77dogz2bmr7wz3sto5x": {
+      "id": "hs1l77dogz2bmr7wz3sto5x",
+      "title": "Jupyter",
+      "desc": "",
+      "updated": 1671489281261,
+      "created": 1671488966213,
+      "custom": {},
+      "fname": "tools.jupyter",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "5f29f48da7f1ac7222f0de37f48afd58",
+      "links": [],
+      "anchors": {
+        "jupyterlab-vs-jupyter-notebook": {
+          "type": "header",
+          "text": "JupyterLab vs Jupyter notebook",
+          "value": "jupyterlab-vs-jupyter-notebook",
+          "line": 8,
+          "column": 0,
+          "depth": 3
+        },
+        "install-jupyterlab": {
+          "type": "header",
+          "text": "install jupyterlab",
+          "value": "install-jupyterlab",
+          "line": 18,
+          "column": 0,
+          "depth": 3
+        },
+        "run-jupterlab": {
+          "type": "header",
+          "text": "run jupterlab",
+          "value": "run-jupterlab",
+          "line": 23,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "nm541dgoi0njzxnux7it18y",
+      "data": {}
+    },
+    "r2y0vlbadwpwfpyzzsdvr9k": {
+      "id": "r2y0vlbadwpwfpyzzsdvr9k",
+      "title": "Hashing",
+      "desc": "",
+      "updated": 1675169294389,
+      "created": 1675169251195,
+      "custom": {},
+      "fname": "tools.hashing",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "d4e2570b06bf57126d0e75076d6802d7",
+      "links": [],
+      "anchors": {
+        "windows": {
+          "type": "header",
+          "text": "windows",
+          "value": "windows",
+          "line": 8,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "nm541dgoi0njzxnux7it18y",
+      "data": {}
+    },
+    "04uwy15ipgua4lzrmnrr5vg": {
+      "id": "04uwy15ipgua4lzrmnrr5vg",
+      "title": "Git",
+      "desc": "",
+      "updated": 1676229978119,
+      "created": 1664675034543,
+      "custom": {},
+      "fname": "tools.git",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "b347f5ee8a650e83c5e7f3dcfd4e673b",
+      "links": [],
+      "anchors": {
+        "general-commands": {
+          "type": "header",
+          "text": "General commands",
+          "value": "general-commands",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        },
+        "create-a-new-branch-and-push-to-remote-repository": {
+          "type": "header",
+          "text": "Create a new branch and push to remote repository",
+          "value": "create-a-new-branch-and-push-to-remote-repository",
+          "line": 10,
+          "column": 0,
+          "depth": 3
+        },
+        "revert-commit": {
+          "type": "header",
+          "text": "Revert commit",
+          "value": "revert-commit",
+          "line": 17,
+          "column": 0,
+          "depth": 3
+        },
+        "removing-untracked-files": {
+          "type": "header",
+          "text": "Removing untracked files",
+          "value": "removing-untracked-files",
+          "line": 26,
+          "column": 0,
+          "depth": 3
+        },
+        "git-reset": {
+          "type": "header",
+          "text": "Git reset",
+          "value": "git-reset",
+          "line": 42,
+          "column": 0,
+          "depth": 3
+        },
+        "discard-unstaged-changes-on-git": {
+          "type": "header",
+          "text": "Discard unstaged changes on Git",
+          "value": "discard-unstaged-changes-on-git",
+          "line": 51,
+          "column": 0,
+          "depth": 3
+        },
+        "git-add": {
+          "type": "header",
+          "text": "Git add",
+          "value": "git-add",
+          "line": 61,
+          "column": 0,
+          "depth": 3
+        },
+        "edit-git-config-file": {
+          "type": "header",
+          "text": "Edit git config file",
+          "value": "edit-git-config-file",
+          "line": 71,
+          "column": 0,
+          "depth": 3
+        },
+        "reading-last-commit": {
+          "type": "header",
+          "text": "Reading last commit",
+          "value": "reading-last-commit",
+          "line": 76,
+          "column": 0,
+          "depth": 3
+        },
+        "git-commit-with-specific-date": {
+          "type": "header",
+          "text": "Git commit with specific date",
+          "value": "git-commit-with-specific-date",
+          "line": 84,
+          "column": 0,
+          "depth": 3
+        },
+        "creating-git-repo-locally": {
+          "type": "header",
+          "text": "Creating Git repo locally",
+          "value": "creating-git-repo-locally",
+          "line": 89,
+          "column": 0,
+          "depth": 2
+        },
+        "pushing-existing-local-git-repo-to-github": {
+          "type": "header",
+          "text": "Pushing Existing local git repo to GitHub",
+          "value": "pushing-existing-local-git-repo-to-github",
+          "line": 93,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "nm541dgoi0njzxnux7it18y",
+      "data": {}
+    },
+    "6kpo1942ysua78f6grwyijm": {
+      "id": "6kpo1942ysua78f6grwyijm",
+      "title": "Fzf",
+      "desc": "",
+      "updated": 1688264432409,
+      "created": 1688264382675,
+      "custom": {},
+      "fname": "tools.fzf",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "a0003c07511ebc38c1b6eb42edb92ce7",
+      "links": [],
+      "anchors": {
+        "install-and-setup-shortcuts": {
+          "type": "header",
+          "text": "install and setup shortcuts",
+          "value": "install-and-setup-shortcuts",
+          "line": 8,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "nm541dgoi0njzxnux7it18y",
+      "data": {}
+    },
+    "hp7jv15215pi0s92tkgr4ob": {
+      "id": "hp7jv15215pi0s92tkgr4ob",
+      "title": "Cmake",
+      "desc": "",
+      "updated": 1688259552869,
+      "created": 1665227552280,
+      "custom": {},
+      "fname": "tools.cmake",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "b65e6638d2f03e73331c2567786d3e67",
+      "links": [],
+      "anchors": {
+        "building-and-existing-project-cheatsheet": {
+          "type": "header",
+          "text": "building and existing project cheatsheet",
+          "value": "building-and-existing-project-cheatsheet",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        },
+        "modern-cmake-in-a-nutshell": {
+          "type": "header",
+          "text": "Modern CMake in a nutshell",
+          "value": "modern-cmake-in-a-nutshell",
+          "line": 16,
+          "column": 0,
+          "depth": 2
+        },
+        "global-setup": {
+          "type": "header",
+          "text": "Global setup",
+          "value": "global-setup",
+          "line": 25,
+          "column": 0,
+          "depth": 3
+        },
+        "delcare-your-module": {
+          "type": "header",
+          "text": "Delcare your module",
+          "value": "delcare-your-module",
+          "line": 40,
+          "column": 0,
+          "depth": 3
+        },
+        "declare-your-flags": {
+          "type": "header",
+          "text": "Declare your flags",
+          "value": "declare-your-flags",
+          "line": 49,
+          "column": 0,
+          "depth": 3
+        },
+        "declare-your-dependencies": {
+          "type": "header",
+          "text": "Declare your dependencies",
+          "value": "declare-your-dependencies",
+          "line": 61,
+          "column": 0,
+          "depth": 3
+        },
+        "header-only-libraries": {
+          "type": "header",
+          "text": "Header-only libraries",
+          "value": "header-only-libraries",
+          "line": 71,
+          "column": 0,
+          "depth": 3
+        },
+        "anti-patterns": {
+          "type": "header",
+          "text": "Anti-patterns",
+          "value": "anti-patterns",
+          "line": 81,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "nm541dgoi0njzxnux7it18y",
+      "data": {}
+    },
+    "6w1zsa6tm5l7qqxueht03ps": {
+      "id": "6w1zsa6tm5l7qqxueht03ps",
+      "title": "Clion",
+      "desc": "",
+      "updated": 1688263124594,
+      "created": 1688262879391,
+      "custom": {},
+      "fname": "tools.clion",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "a9d6d0248496a4876a51e330f225bedf",
+      "links": [],
+      "anchors": {
+        "initial-setup": {
+          "type": "header",
+          "text": "Initial setup",
+          "value": "initial-setup",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        },
+        "font": {
+          "type": "header",
+          "text": "font",
+          "value": "font",
+          "line": 10,
+          "column": 0,
+          "depth": 3
+        },
+        "editor": {
+          "type": "header",
+          "text": "editor",
+          "value": "editor",
+          "line": 14,
+          "column": 0,
+          "depth": 3
+        },
+        "vcpkg": {
+          "type": "header",
+          "text": "vcpkg",
+          "value": "vcpkg",
+          "line": 17,
+          "column": 0,
+          "depth": 3
+        },
+        "plugins": {
+          "type": "header",
+          "text": "plugins",
+          "value": "plugins",
+          "line": 22,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "nm541dgoi0njzxnux7it18y",
+      "data": {}
+    },
+    "acildvugww1my1n5ruojfec": {
+      "id": "acildvugww1my1n5ruojfec",
+      "title": "Clang Format",
+      "desc": "",
+      "updated": 1688291905710,
+      "created": 1688291892170,
+      "custom": {},
+      "fname": "tools.clang-format",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "ab8ba90749b70ad0f0ddbb58ca2a2bb4",
+      "links": [],
+      "anchors": {
+        "install": {
+          "type": "header",
+          "text": "install",
+          "value": "install",
+          "line": 8,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "nm541dgoi0njzxnux7it18y",
+      "data": {}
+    },
+    "rftnddr5kr2oi9582nrwjxd": {
+      "id": "rftnddr5kr2oi9582nrwjxd",
+      "title": "Mac",
+      "desc": "",
+      "updated": 1678674954901,
+      "created": 1678674932365,
+      "custom": {},
+      "fname": "mac",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "f94aa494c9b16cb43dd1473d9bb0341c",
+      "links": [],
+      "anchors": {
+        "repeating-characters-fix": {
+          "type": "header",
+          "text": "Repeating characters fix",
+          "value": "repeating-characters-fix",
+          "line": 8,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "txvdlk2mbhl2y2muokxxozo",
+      "data": {}
+    },
+    "155oput5ed55eq5lxuswdw9": {
+      "id": "155oput5ed55eq5lxuswdw9",
+      "title": "Linux",
+      "desc": "",
+      "updated": 1675159063059,
+      "created": 1675159063059,
+      "custom": {},
+      "fname": "linux",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "3aa78b69bc6004a17794eb72fad255c5",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "qogf6mgpnnfneh0wjxxl7dh",
+        "py8ct9qauho6ix6jxnsx6ho",
+        "nm65zw8skkor2pnqyz8gfd7",
+        "imrdta9hjnuhto6exns9fx5",
+        "z8fzkjo0zke873q87zu6t71",
+        "7bty8bp48bpjoancqe5ksc9",
+        "j0z7jbe315pr82284cgv3z3"
+      ],
+      "parent": "txvdlk2mbhl2y2muokxxozo",
+      "data": {}
+    },
+    "j0z7jbe315pr82284cgv3z3": {
+      "id": "j0z7jbe315pr82284cgv3z3",
+      "title": "Raspberry Pi",
+      "desc": "",
+      "updated": 1675166782025,
+      "created": 1671098231419,
+      "custom": {},
+      "fname": "linux.raspberry-pi",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "e943dd1dc4b142016d3c5ef21befaa09",
+      "links": [],
+      "anchors": {
+        "details": {
+          "type": "header",
+          "text": "details",
+          "value": "details",
+          "line": 8,
+          "column": 0,
+          "depth": 3
+        },
+        "login": {
+          "type": "header",
+          "text": "login",
+          "value": "login",
+          "line": 17,
+          "column": 0,
+          "depth": 3
+        },
+        "copy-ssh-keypair-to-server": {
+          "type": "header",
+          "text": "Copy ssh keypair to server",
+          "value": "copy-ssh-keypair-to-server",
+          "line": 31,
+          "column": 0,
+          "depth": 3
+        },
+        "nas-start-up": {
+          "type": "header",
+          "text": "NAS start up",
+          "value": "nas-start-up",
+          "line": 36,
+          "column": 0,
+          "depth": 3
+        },
+        "wifi-settings": {
+          "type": "header",
+          "text": "wifi settings",
+          "value": "wifi-settings",
+          "line": 41,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "155oput5ed55eq5lxuswdw9",
+      "data": {}
+    },
+    "7bty8bp48bpjoancqe5ksc9": {
+      "id": "7bty8bp48bpjoancqe5ksc9",
+      "title": "Qtile",
+      "desc": "",
+      "updated": 1687304337209,
+      "created": 1687303944529,
+      "custom": {},
+      "fname": "linux.qtile",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "adf2f2f89ef6570b4cb7b667fe534e02",
+      "links": [],
+      "anchors": {
+        "autostart-applicationsscript-issue": {
+          "type": "header",
+          "text": "autostart applications/script issue",
+          "value": "autostart-applicationsscript-issue",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [
+        "bbyi6fiywaab0zcf4hvrsjx"
+      ],
+      "parent": "155oput5ed55eq5lxuswdw9",
+      "data": {}
+    },
+    "bbyi6fiywaab0zcf4hvrsjx": {
+      "id": "bbyi6fiywaab0zcf4hvrsjx",
+      "title": "Debian",
+      "desc": "",
+      "updated": 1710035335363,
+      "created": 1710035269930,
+      "custom": {},
+      "fname": "linux.qtile.debian",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "09e722bed4455317e91f72c8d15e7ad4",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": "7bty8bp48bpjoancqe5ksc9",
+      "data": {}
+    },
+    "z8fzkjo0zke873q87zu6t71": {
+      "id": "z8fzkjo0zke873q87zu6t71",
+      "title": "Mouse Sensitivity",
+      "desc": "",
+      "updated": 1675166628823,
+      "created": 1674508792611,
+      "custom": {},
+      "fname": "linux.mouse-sensitivity",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "22f986497a49aaa8a11ca84cffdb0e53",
+      "links": [],
+      "anchors": {
+        "libinput": {
+          "type": "header",
+          "text": "libinput",
+          "value": "libinput",
+          "line": 8,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "155oput5ed55eq5lxuswdw9",
+      "data": {}
+    },
+    "imrdta9hjnuhto6exns9fx5": {
+      "id": "imrdta9hjnuhto6exns9fx5",
+      "title": "Mint",
+      "desc": "",
+      "updated": 1710032046679,
+      "created": 1710032046679,
+      "custom": {},
+      "fname": "linux.mint",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "b41fc417e49db5465ff0a5e63c10599d",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "7lv6hr002wak3sm3ufa6p38"
+      ],
+      "parent": "155oput5ed55eq5lxuswdw9",
+      "data": {}
+    },
+    "7lv6hr002wak3sm3ufa6p38": {
+      "id": "7lv6hr002wak3sm3ufa6p38",
+      "title": "Setup",
+      "desc": "",
+      "updated": 1710037445818,
+      "created": 1710032075443,
+      "custom": {},
+      "fname": "linux.mint.setup",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "48fde69b8d66193887a0fbae0c0f4d5c",
+      "links": [],
+      "anchors": {
+        "linux-mint-setup": {
+          "type": "header",
+          "text": "Linux mint setup",
+          "value": "linux-mint-setup",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "create-usb-bootable-drive": {
+          "type": "header",
+          "text": "Create USB Bootable drive",
+          "value": "create-usb-bootable-drive",
+          "line": 12,
+          "column": 0,
+          "depth": 2
+        },
+        "installing-linux-mint": {
+          "type": "header",
+          "text": "Installing Linux mint",
+          "value": "installing-linux-mint",
+          "line": 17,
+          "column": 0,
+          "depth": 2
+        },
+        "first-steps": {
+          "type": "header",
+          "text": "First steps",
+          "value": "first-steps",
+          "line": 24,
+          "column": 0,
+          "depth": 2
+        },
+        "settings": {
+          "type": "header",
+          "text": "Settings",
+          "value": "settings",
+          "line": 39,
+          "column": 0,
+          "depth": 2
+        },
+        "initial-packages": {
+          "type": "header",
+          "text": "Initial packages",
+          "value": "initial-packages",
+          "line": 42,
+          "column": 0,
+          "depth": 2
+        },
+        "install-nerdfont": {
+          "type": "header",
+          "text": "Install nerdfont",
+          "value": "install-nerdfont",
+          "line": 51,
+          "column": 0,
+          "depth": 2
+        },
+        "qtile-setup": {
+          "type": "header",
+          "text": "qtile setup",
+          "value": "qtile-setup",
+          "line": 55,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "imrdta9hjnuhto6exns9fx5",
+      "data": {}
+    },
+    "nm65zw8skkor2pnqyz8gfd7": {
+      "id": "nm65zw8skkor2pnqyz8gfd7",
+      "title": "Fedora",
+      "desc": "",
+      "updated": 1675159063065,
+      "created": 1675159063065,
+      "custom": {},
+      "fname": "linux.fedora",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "79a3781521e29910ef3facabc7c8ccd3",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "56lg0varlaxfojim4yyv3af",
+        "d7p64g6cgi98y6dyktth97g"
+      ],
+      "parent": "155oput5ed55eq5lxuswdw9",
+      "data": {}
+    },
+    "d7p64g6cgi98y6dyktth97g": {
+      "id": "d7p64g6cgi98y6dyktth97g",
+      "title": "Setup",
+      "desc": "",
+      "updated": 1687087124262,
+      "created": 1687080184457,
+      "custom": {},
+      "fname": "linux.fedora.setup",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "3f0ad8892885ce153eeee03ff832743c",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "linux.fedora.setup",
+            "id": "d7p64g6cgi98y6dyktth97g",
+            "vaultName": "DendronVault"
+          },
+          "value": "linux.additional-setup",
+          "position": {
+            "start": {
+              "line": 66,
+              "column": 1,
+              "offset": 1773
+            },
+            "end": {
+              "line": 66,
+              "column": 27,
+              "offset": 1799
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "linux.additional-setup"
+          }
+        }
+      ],
+      "anchors": {
+        "fedora-workstation-setup": {
+          "type": "header",
+          "text": "Fedora workstation setup",
+          "value": "fedora-workstation-setup",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "create-usb-bootable-drive": {
+          "type": "header",
+          "text": "Create USB bootable drive",
+          "value": "create-usb-bootable-drive",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "disable-secure-boot": {
+          "type": "header",
+          "text": "Disable secure boot",
+          "value": "disable-secure-boot",
+          "line": 17,
+          "column": 0,
+          "depth": 2
+        },
+        "install-fedora": {
+          "type": "header",
+          "text": "Install Fedora",
+          "value": "install-fedora",
+          "line": 23,
+          "column": 0,
+          "depth": 2
+        },
+        "setup-gnome-desktop-environment": {
+          "type": "header",
+          "text": "Setup gnome desktop environment",
+          "value": "setup-gnome-desktop-environment",
+          "line": 36,
+          "column": 0,
+          "depth": 2
+        },
+        "configure-dnf-and-update": {
+          "type": "header",
+          "text": "Configure dnf and update",
+          "value": "configure-dnf-and-update",
+          "line": 40,
+          "column": 0,
+          "depth": 2
+        },
+        "enable-rpm-fusion": {
+          "type": "header",
+          "text": "Enable RPM Fusion",
+          "value": "enable-rpm-fusion",
+          "line": 46,
+          "column": 0,
+          "depth": 2
+        },
+        "install-nvidia-drivers": {
+          "type": "header",
+          "text": "Install NVIDIA drivers",
+          "value": "install-nvidia-drivers",
+          "line": 55,
+          "column": 0,
+          "depth": 2
+        },
+        "gnome-tweaks": {
+          "type": "header",
+          "text": "Gnome tweaks",
+          "value": "gnome-tweaks",
+          "line": 61,
+          "column": 0,
+          "depth": 2
+        },
+        "install-qtile": {
+          "type": "header",
+          "text": "Install Qtile",
+          "value": "install-qtile",
+          "line": 66,
+          "column": 0,
+          "depth": 2
+        },
+        "extra-setups": {
+          "type": "header",
+          "text": "extra setups",
+          "value": "extra-setups",
+          "line": 71,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "nm65zw8skkor2pnqyz8gfd7",
+      "data": {}
+    },
+    "56lg0varlaxfojim4yyv3af": {
+      "id": "56lg0varlaxfojim4yyv3af",
+      "title": "Nvidia Kernel Module Fix",
+      "desc": "",
+      "updated": 1688209317759,
+      "created": 1670094259336,
+      "custom": {},
+      "fname": "linux.fedora.nvidia-kernel-module-fix",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "7100dfa0873f3a67c7ec3c626ec68741",
+      "links": [],
+      "anchors": {
+        "commands-to-run-to-fix": {
+          "type": "header",
+          "text": "commands to run to fix",
+          "value": "commands-to-run-to-fix",
+          "line": 8,
+          "column": 0,
+          "depth": 3
+        },
+        "secure-boot": {
+          "type": "header",
+          "text": "secure boot",
+          "value": "secure-boot",
+          "line": 27,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "nm65zw8skkor2pnqyz8gfd7",
+      "data": {}
+    },
+    "py8ct9qauho6ix6jxnsx6ho": {
+      "id": "py8ct9qauho6ix6jxnsx6ho",
+      "title": "Cron",
+      "desc": "",
+      "updated": 1675166577963,
+      "created": 1674659800258,
+      "custom": {},
+      "fname": "linux.cron",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "b87f8653d6da9f2e8e0ea47746b7149d",
+      "links": [],
+      "anchors": {
+        "edit-cron": {
+          "type": "header",
+          "text": "edit cron",
+          "value": "edit-cron",
+          "line": 8,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "155oput5ed55eq5lxuswdw9",
+      "data": {}
+    },
+    "qogf6mgpnnfneh0wjxxl7dh": {
+      "id": "qogf6mgpnnfneh0wjxxl7dh",
+      "title": "Additional Setup",
+      "desc": "",
+      "updated": 1688231669669,
+      "created": 1687087095027,
+      "custom": {},
+      "fname": "linux.additional-setup",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "dfa623355e2dc6c6fe38b0b48bd0a852",
+      "links": [
+        {
+          "from": {
+            "fname": "linux.fedora.setup",
+            "id": "d7p64g6cgi98y6dyktth97g",
+            "vaultName": "DendronVault"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 66,
+              "column": 1,
+              "offset": 1773
+            },
+            "end": {
+              "line": 66,
+              "column": 27,
+              "offset": 1799
+            },
+            "indent": []
+          },
+          "value": "linux.additional-setup"
+        }
+      ],
+      "anchors": {
+        "install-nerd-fonts": {
+          "type": "header",
+          "text": "install nerd fonts",
+          "value": "install-nerd-fonts",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        },
+        "zsh": {
+          "type": "header",
+          "text": "zsh",
+          "value": "zsh",
+          "line": 14,
+          "column": 0,
+          "depth": 2
+        },
+        "other-packages": {
+          "type": "header",
+          "text": "other packages",
+          "value": "other-packages",
+          "line": 31,
+          "column": 0,
+          "depth": 2
+        },
+        "install-brave-browser": {
+          "type": "header",
+          "text": "install brave browser",
+          "value": "install-brave-browser",
+          "line": 38,
+          "column": 0,
+          "depth": 2
+        },
+        "monitor-output-stuff": {
+          "type": "header",
+          "text": "monitor output stuff",
+          "value": "monitor-output-stuff",
+          "line": 44,
+          "column": 0,
+          "depth": 2
+        },
+        "networking": {
+          "type": "header",
+          "text": "networking",
+          "value": "networking",
+          "line": 50,
+          "column": 0,
+          "depth": 2
+        },
+        "notifications": {
+          "type": "header",
+          "text": "notifications",
+          "value": "notifications",
+          "line": 59,
+          "column": 0,
+          "depth": 2
+        },
+        "touchpad-settings": {
+          "type": "header",
+          "text": "touchpad settings",
+          "value": "touchpad-settings",
+          "line": 62,
+          "column": 0,
+          "depth": 2
+        },
+        "keyboard-settings": {
+          "type": "header",
+          "text": "keyboard settings",
+          "value": "keyboard-settings",
+          "line": 84,
+          "column": 0,
+          "depth": 2
+        },
+        "rofi": {
+          "type": "header",
+          "text": "rofi",
+          "value": "rofi",
+          "line": 101,
+          "column": 0,
+          "depth": 2
+        },
+        "dev-related-setup": {
+          "type": "header",
+          "text": "dev related setup",
+          "value": "dev-related-setup",
+          "line": 110,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "155oput5ed55eq5lxuswdw9",
+      "data": {}
+    },
+    "uhd2kqv69ly9jb7r0o6dw1t": {
+      "id": "uhd2kqv69ly9jb7r0o6dw1t",
+      "title": "Libs",
+      "desc": "",
+      "updated": 1665586354490,
+      "created": 1665586354490,
+      "custom": {},
+      "fname": "libs",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "d09e4c606dc171962d66a1f377766180",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "kmywt3vnihnkvqoabgzpuje"
+      ],
+      "parent": "txvdlk2mbhl2y2muokxxozo",
+      "data": {}
+    },
+    "kmywt3vnihnkvqoabgzpuje": {
+      "id": "kmywt3vnihnkvqoabgzpuje",
+      "title": "Quickfix",
+      "desc": "",
+      "updated": 1665586358560,
+      "created": 1665586358560,
+      "custom": {},
+      "fname": "libs.quickfix",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "4f3d2e21b4b415629c7f2b718727f0bb",
+      "links": [],
+      "anchors": {
+        "python-whl-download": {
+          "type": "header",
+          "text": "Python whl download",
+          "value": "python-whl-download",
+          "line": 8,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "uhd2kqv69ly9jb7r0o6dw1t",
+      "data": {}
+    },
+    "lubegqfiz1ik4hq8fnomek2": {
+      "id": "lubegqfiz1ik4hq8fnomek2",
+      "title": "Lang",
+      "desc": "",
+      "updated": 1664671423127,
+      "created": 1664671423127,
+      "custom": {},
+      "fname": "lang",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "ebf4a6bfc2d2c560d1257c877dbed69f",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "7k937deztzwxmov1gbde86f"
+      ],
+      "parent": "txvdlk2mbhl2y2muokxxozo",
+      "data": {}
+    },
+    "7k937deztzwxmov1gbde86f": {
+      "id": "7k937deztzwxmov1gbde86f",
+      "title": "Cpp",
+      "desc": "",
+      "updated": 1664671430610,
+      "created": 1664671430610,
+      "custom": {},
+      "fname": "lang.cpp",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "ed352ae1d40313abb75c8ee79737492a",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "ye47jxon8i7r302swio082v",
+        "q1m5qyz4a56v9evbk2eujha",
+        "vs1fiq1wm14sf0cqq4ok5vj",
+        "3vtad9ehlxwa5n2gffrjsr1"
+      ],
+      "parent": "lubegqfiz1ik4hq8fnomek2",
+      "data": {}
+    },
+    "3vtad9ehlxwa5n2gffrjsr1": {
+      "id": "3vtad9ehlxwa5n2gffrjsr1",
+      "title": "Versions",
+      "desc": "",
+      "updated": 1688501773657,
+      "created": 1688494431962,
+      "custom": {},
+      "fname": "lang.cpp.versions",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "8d364e838921f47bbe826373fb5bfbbc",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "lang.cpp.versions",
+            "id": "3vtad9ehlxwa5n2gffrjsr1",
+            "vaultName": "DendronVault"
+          },
+          "value": "tags.elifdef",
+          "alias": "#elifdef",
+          "position": {
+            "start": {
+              "line": 172,
+              "column": 5,
+              "offset": 10029
+            },
+            "end": {
+              "line": 172,
+              "column": 13,
+              "offset": 10037
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "tags.elifdef"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "lang.cpp.versions",
+            "id": "3vtad9ehlxwa5n2gffrjsr1",
+            "vaultName": "DendronVault"
+          },
+          "value": "tags.elifndef",
+          "alias": "#elifndef",
+          "position": {
+            "start": {
+              "line": 172,
+              "column": 15,
+              "offset": 10039
+            },
+            "end": {
+              "line": 172,
+              "column": 24,
+              "offset": 10048
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "tags.elifndef"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "lang.cpp.versions",
+            "id": "3vtad9ehlxwa5n2gffrjsr1",
+            "vaultName": "DendronVault"
+          },
+          "value": "tags.warning",
+          "alias": "#warning",
+          "position": {
+            "start": {
+              "line": 172,
+              "column": 30,
+              "offset": 10054
+            },
+            "end": {
+              "line": 172,
+              "column": 38,
+              "offset": 10062
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "tags.warning"
+          }
+        }
+      ],
+      "anchors": {
+        "c-evolution-through-the-years": {
+          "type": "header",
+          "text": "C++ evolution through the years",
+          "value": "c-evolution-through-the-years",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        },
+        "pre-98": {
+          "type": "header",
+          "text": "Pre 98",
+          "value": "pre-98",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "c-98": {
+          "type": "header",
+          "text": "C++ 98",
+          "value": "c-98",
+          "line": 28,
+          "column": 0,
+          "depth": 2
+        },
+        "c-03": {
+          "type": "header",
+          "text": "C++ 03",
+          "value": "c-03",
+          "line": 47,
+          "column": 0,
+          "depth": 2
+        },
+        "c-11": {
+          "type": "header",
+          "text": "C++ 11",
+          "value": "c-11",
+          "line": 59,
+          "column": 0,
+          "depth": 2
+        },
+        "c-14": {
+          "type": "header",
+          "text": "C++ 14",
+          "value": "c-14",
+          "line": 88,
+          "column": 0,
+          "depth": 2
+        },
+        "c-17": {
+          "type": "header",
+          "text": "C++ 17",
+          "value": "c-17",
+          "line": 107,
+          "column": 0,
+          "depth": 2
+        },
+        "c-20": {
+          "type": "header",
+          "text": "C++ 20",
+          "value": "c-20",
+          "line": 140,
+          "column": 0,
+          "depth": 2
+        },
+        "c-23": {
+          "type": "header",
+          "text": "C++ 23",
+          "value": "c-23",
+          "line": 168,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "7k937deztzwxmov1gbde86f",
+      "data": {}
+    },
+    "vs1fiq1wm14sf0cqq4ok5vj": {
+      "id": "vs1fiq1wm14sf0cqq4ok5vj",
+      "title": "Std",
+      "desc": "",
+      "updated": 1664675864528,
+      "created": 1664675864528,
+      "custom": {},
+      "fname": "lang.cpp.std",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "eddf15539e47765b72f915d17bf87431",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "gxtjff8r9znuypi2q4r5gjw",
+        "9q02r7785re7jcvazvp6q54",
+        "hfzytsqavasmhor93hprfkn"
+      ],
+      "parent": "7k937deztzwxmov1gbde86f",
+      "data": {}
+    },
+    "hfzytsqavasmhor93hprfkn": {
+      "id": "hfzytsqavasmhor93hprfkn",
+      "title": "Variant",
+      "desc": "",
+      "updated": 1690039148273,
+      "created": 1690037287432,
+      "custom": {},
+      "fname": "lang.cpp.std.variant",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "292da5b40e14c8d0da88fe82d0671932",
+      "links": [],
+      "anchors": {
+        "summary": {
+          "type": "header",
+          "text": "Summary",
+          "value": "summary",
+          "line": 8,
+          "column": 0,
+          "depth": 3
+        },
+        "typical-usage": {
+          "type": "header",
+          "text": "Typical usage",
+          "value": "typical-usage",
+          "line": 18,
+          "column": 0,
+          "depth": 3
+        },
+        "database-query-results": {
+          "type": "header",
+          "text": "database query results",
+          "value": "database-query-results",
+          "line": 20,
+          "column": 0,
+          "depth": 4
+        },
+        "abstract-syntax-tree": {
+          "type": "header",
+          "text": "Abstract syntax tree",
+          "value": "abstract-syntax-tree",
+          "line": 31,
+          "column": 0,
+          "depth": 4
+        },
+        "examples": {
+          "type": "header",
+          "text": "Examples",
+          "value": "examples",
+          "line": 36,
+          "column": 0,
+          "depth": 3
+        },
+        "basic-usage": {
+          "type": "header",
+          "text": "Basic usage",
+          "value": "basic-usage",
+          "line": 38,
+          "column": 0,
+          "depth": 4
+        },
+        "stdbad_variant_access": {
+          "type": "header",
+          "text": "std::bad_variant_access",
+          "value": "stdbad_variant_access",
+          "line": 51,
+          "column": 0,
+          "depth": 4
+        },
+        "stdget_if": {
+          "type": "header",
+          "text": "std::get_if",
+          "value": "stdget_if",
+          "line": 62,
+          "column": 0,
+          "depth": 4
+        },
+        "stdholds_alternative": {
+          "type": "header",
+          "text": "std::holds_alternative",
+          "value": "stdholds_alternative",
+          "line": 73,
+          "column": 0,
+          "depth": 4
+        }
+      },
+      "children": [],
+      "parent": "vs1fiq1wm14sf0cqq4ok5vj",
+      "data": {}
+    },
+    "9q02r7785re7jcvazvp6q54": {
+      "id": "9q02r7785re7jcvazvp6q54",
+      "title": "Priority_queue",
+      "desc": "",
+      "updated": 1678223250546,
+      "created": 1678223091389,
+      "custom": {},
+      "fname": "lang.cpp.std.priority_queue",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "1857fa2e9f3ba64959d579ac43d2adcc",
+      "links": [],
+      "anchors": {
+        "default-max-queue-syntax": {
+          "type": "header",
+          "text": "Default max queue syntax",
+          "value": "default-max-queue-syntax",
+          "line": 8,
+          "column": 0,
+          "depth": 3
+        },
+        "to-make-it-a-min-heap": {
+          "type": "header",
+          "text": "To make it a min heap",
+          "value": "to-make-it-a-min-heap",
+          "line": 13,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "vs1fiq1wm14sf0cqq4ok5vj",
+      "data": {}
+    },
+    "gxtjff8r9znuypi2q4r5gjw": {
+      "id": "gxtjff8r9znuypi2q4r5gjw",
+      "title": "Any",
+      "desc": "",
+      "updated": 1690040009602,
+      "created": 1690039209656,
+      "custom": {},
+      "fname": "lang.cpp.std.any",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "c89027f01fff689ca525df63ca2eca22",
+      "links": [],
+      "anchors": {
+        "summary": {
+          "type": "header",
+          "text": "Summary",
+          "value": "summary",
+          "line": 8,
+          "column": 0,
+          "depth": 3
+        },
+        "typical-usage": {
+          "type": "header",
+          "text": "Typical usage",
+          "value": "typical-usage",
+          "line": 19,
+          "column": 0,
+          "depth": 3
+        },
+        "hetereogeneous-vector": {
+          "type": "header",
+          "text": "Hetereogeneous vector",
+          "value": "hetereogeneous-vector",
+          "line": 20,
+          "column": 0,
+          "depth": 4
+        },
+        "examples": {
+          "type": "header",
+          "text": "Examples",
+          "value": "examples",
+          "line": 31,
+          "column": 0,
+          "depth": 3
+        },
+        "basic-usage": {
+          "type": "header",
+          "text": "Basic usage",
+          "value": "basic-usage",
+          "line": 32,
+          "column": 0,
+          "depth": 4
+        },
+        "stdbad_any_cast": {
+          "type": "header",
+          "text": "std::bad_any_cast",
+          "value": "stdbad_any_cast",
+          "line": 51,
+          "column": 0,
+          "depth": 4
+        },
+        "stdany_cast": {
+          "type": "header",
+          "text": "std::any_cast",
+          "value": "stdany_cast",
+          "line": 62,
+          "column": 0,
+          "depth": 4
+        },
+        "stdany_cast-with-references": {
+          "type": "header",
+          "text": "std::any_cast with references",
+          "value": "stdany_cast-with-references",
+          "line": 71,
+          "column": 0,
+          "depth": 4
+        },
+        "has_value-and-reset": {
+          "type": "header",
+          "text": "has_value and reset",
+          "value": "has_value-and-reset",
+          "line": 79,
+          "column": 0,
+          "depth": 4
+        }
+      },
+      "children": [],
+      "parent": "vs1fiq1wm14sf0cqq4ok5vj",
+      "data": {}
+    },
+    "q1m5qyz4a56v9evbk2eujha": {
+      "id": "q1m5qyz4a56v9evbk2eujha",
+      "title": "Move Semantics",
+      "desc": "",
+      "updated": 1675166482344,
+      "created": 1664671465039,
+      "custom": {},
+      "fname": "lang.cpp.move-semantics",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "68fbefc95eba1d9f0ddc510bbc73ff4f",
+      "links": [
+        {
+          "from": {
+            "fname": "lang.cpp.lvalues-and-rvalues",
+            "id": "ye47jxon8i7r302swio082v",
+            "vaultName": "DendronVault"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 6,
+              "column": 9,
+              "offset": 197
+            },
+            "end": {
+              "line": 6,
+              "column": 36,
+              "offset": 224
+            },
+            "indent": []
+          },
+          "value": "lang.cpp.move-semantics"
+        }
+      ],
+      "anchors": {
+        "summary": {
+          "type": "header",
+          "text": "Summary",
+          "value": "summary",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        },
+        "move-constructor": {
+          "type": "header",
+          "text": "Move constructor",
+          "value": "move-constructor",
+          "line": 12,
+          "column": 0,
+          "depth": 2
+        },
+        "move-assignment-operator": {
+          "type": "header",
+          "text": "Move assignment operator",
+          "value": "move-assignment-operator",
+          "line": 16,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "7k937deztzwxmov1gbde86f",
+      "data": {}
+    },
+    "ye47jxon8i7r302swio082v": {
+      "id": "ye47jxon8i7r302swio082v",
+      "title": "Lvalues and Rvalues",
+      "desc": "",
+      "updated": 1664671745319,
+      "created": 1664671648836,
+      "custom": {},
+      "fname": "lang.cpp.lvalues-and-rvalues",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "dc48402197b4d22dfc4d2e6aa28be955",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "lang.cpp.lvalues-and-rvalues",
+            "id": "ye47jxon8i7r302swio082v",
+            "vaultName": "DendronVault"
+          },
+          "value": "lang.cpp.move-semantics",
+          "position": {
+            "start": {
+              "line": 6,
+              "column": 9,
+              "offset": 197
+            },
+            "end": {
+              "line": 6,
+              "column": 36,
+              "offset": 224
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "lang.cpp.move-semantics"
+          }
+        }
+      ],
+      "anchors": {},
+      "children": [],
+      "parent": "7k937deztzwxmov1gbde86f",
+      "data": {}
+    },
+    "3xtbw7nonlogrlsu9k2hymz": {
+      "id": "3xtbw7nonlogrlsu9k2hymz",
+      "title": "Katas",
+      "desc": "",
+      "updated": 1702347652692,
+      "created": 1702346717978,
+      "custom": {},
+      "fname": "katas",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "3a93c16359bcb5b8ccf470a0cb8ff8df",
+      "links": [],
+      "anchors": {
+        "sliding-window": {
+          "type": "header",
+          "text": "sliding window",
+          "value": "sliding-window",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        },
+        "prefix-sum": {
+          "type": "header",
+          "text": "prefix sum",
+          "value": "prefix-sum",
+          "line": 13,
+          "column": 0,
+          "depth": 2
+        },
+        "two-pointers": {
+          "type": "header",
+          "text": "two pointers",
+          "value": "two-pointers",
+          "line": 19,
+          "column": 0,
+          "depth": 2
+        },
+        "hash-maps": {
+          "type": "header",
+          "text": "hash maps",
+          "value": "hash-maps",
+          "line": 25,
+          "column": 0,
+          "depth": 2
+        },
+        "dfs": {
+          "type": "header",
+          "text": "DFS",
+          "value": "dfs",
+          "line": 27,
+          "column": 0,
+          "depth": 2
+        },
+        "bfs": {
+          "type": "header",
+          "text": "BFS",
+          "value": "bfs",
+          "line": 29,
+          "column": 0,
+          "depth": 2
+        },
+        "dfsbfs-in-matrix-graphs": {
+          "type": "header",
+          "text": "DFS/BFS in matrix graphs",
+          "value": "dfsbfs-in-matrix-graphs",
+          "line": 31,
+          "column": 0,
+          "depth": 2
+        },
+        "dfsbfs-in-adjacency-lists": {
+          "type": "header",
+          "text": "DFS/BFS in adjacency lists",
+          "value": "dfsbfs-in-adjacency-lists",
+          "line": 33,
+          "column": 0,
+          "depth": 2
+        },
+        "heaps": {
+          "type": "header",
+          "text": "heaps",
+          "value": "heaps",
+          "line": 35,
+          "column": 0,
+          "depth": 2
+        },
+        "dynamic-programming": {
+          "type": "header",
+          "text": "dynamic programming",
+          "value": "dynamic-programming",
+          "line": 37,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "txvdlk2mbhl2y2muokxxozo",
+      "data": {}
+    },
+    "cq5doh4f24evc4ewzhg5yf3": {
+      "id": "cq5doh4f24evc4ewzhg5yf3",
+      "title": "Datastructures",
+      "desc": "",
+      "updated": 1682266043286,
+      "created": 1682266043286,
+      "custom": {},
+      "fname": "datastructures",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "b65730c04a68809482081173b1b5d4d0",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "pixne08f9hda3vzcetj2jvv",
+        "mel9qapq3oyqb5gpd7onyeq",
+        "azirqu78s4pdbsosv0gqakm",
+        "3xirn9y2ejhs5hgoh6ko9i1",
+        "hame6ftjq5bra5fzc98u64y",
+        "r44heu54fmmeeaz7qccmqba",
+        "j6629ov8i69dg12ifxdbzqa",
+        "wu8egj9yesx6l8j3odpa6br",
+        "xgleienln5stv551d6l7qv6"
+      ],
+      "parent": "txvdlk2mbhl2y2muokxxozo",
+      "data": {}
+    },
+    "xgleienln5stv551d6l7qv6": {
+      "id": "xgleienln5stv551d6l7qv6",
+      "title": "Stack",
+      "desc": "",
+      "updated": 1682366146295,
+      "created": 1682266168140,
+      "custom": {},
+      "fname": "datastructures.stack",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "5f3929e1542da0aa3aff441c36547f58",
+      "links": [],
+      "anchors": {
+        "interface": {
+          "type": "header",
+          "text": "interface",
+          "value": "interface",
+          "line": 9,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "cq5doh4f24evc4ewzhg5yf3",
+      "data": {}
+    },
+    "wu8egj9yesx6l8j3odpa6br": {
+      "id": "wu8egj9yesx6l8j3odpa6br",
+      "title": "Set",
+      "desc": "",
+      "updated": 1682275539143,
+      "created": 1682275233912,
+      "custom": {},
+      "fname": "datastructures.set",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "15b977e09ec1f7d84958420204691326",
+      "links": [],
+      "anchors": {
+        "interface": {
+          "type": "header",
+          "text": "interface",
+          "value": "interface",
+          "line": 8,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "cq5doh4f24evc4ewzhg5yf3",
+      "data": {}
+    },
+    "j6629ov8i69dg12ifxdbzqa": {
+      "id": "j6629ov8i69dg12ifxdbzqa",
+      "title": "Queue",
+      "desc": "",
+      "updated": 1682366158862,
+      "created": 1682274477681,
+      "custom": {},
+      "fname": "datastructures.queue",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "74c11a16eae441844cecde9b8530adfc",
+      "links": [],
+      "anchors": {
+        "interface": {
+          "type": "header",
+          "text": "interface",
+          "value": "interface",
+          "line": 9,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "cq5doh4f24evc4ewzhg5yf3",
+      "data": {}
+    },
+    "r44heu54fmmeeaz7qccmqba": {
+      "id": "r44heu54fmmeeaz7qccmqba",
+      "title": "Map",
+      "desc": "",
+      "updated": 1682275223905,
+      "created": 1682275223905,
+      "custom": {},
+      "fname": "datastructures.map",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "8ba80e9f11f5c81bffba7ad702cec325",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": "cq5doh4f24evc4ewzhg5yf3",
+      "data": {}
+    },
+    "hame6ftjq5bra5fzc98u64y": {
+      "id": "hame6ftjq5bra5fzc98u64y",
+      "title": "Linked List",
+      "desc": "",
+      "updated": 1682366180295,
+      "created": 1682273942510,
+      "custom": {},
+      "fname": "datastructures.linked-list",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "1ecd78776e40927efa0195969ff70cbf",
+      "links": [],
+      "anchors": {
+        "interface": {
+          "type": "header",
+          "text": "interface",
+          "value": "interface",
+          "line": 9,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "cq5doh4f24evc4ewzhg5yf3",
+      "data": {}
+    },
+    "3xirn9y2ejhs5hgoh6ko9i1": {
+      "id": "3xirn9y2ejhs5hgoh6ko9i1",
+      "title": "Heap",
+      "desc": "",
+      "updated": 1682365623975,
+      "created": 1682275626872,
+      "custom": {},
+      "fname": "datastructures.heap",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "12f28fa6073198b627339865485fa598",
+      "links": [],
+      "anchors": {
+        "interface": {
+          "type": "header",
+          "text": "interface",
+          "value": "interface",
+          "line": 9,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "cq5doh4f24evc4ewzhg5yf3",
+      "data": {}
+    },
+    "azirqu78s4pdbsosv0gqakm": {
+      "id": "azirqu78s4pdbsosv0gqakm",
+      "title": "Hash Map",
+      "desc": "",
+      "updated": 1689523040829,
+      "created": 1682274863093,
+      "custom": {},
+      "fname": "datastructures.hash-map",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "f3ecfd76c605f50eddfaec412542ce0c",
+      "links": [],
+      "anchors": {
+        "interface": {
+          "type": "header",
+          "text": "interface",
+          "value": "interface",
+          "line": 9,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "cq5doh4f24evc4ewzhg5yf3",
+      "data": {}
+    },
+    "mel9qapq3oyqb5gpd7onyeq": {
+      "id": "mel9qapq3oyqb5gpd7onyeq",
+      "title": "Dynamic Array",
+      "desc": "",
+      "updated": 1682366392517,
+      "created": 1682266159788,
+      "custom": {},
+      "fname": "datastructures.dynamic-array",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "59e7a7eab4f1803ce524e7eb0634b82a",
+      "links": [],
+      "anchors": {
+        "interface": {
+          "type": "header",
+          "text": "interface",
+          "value": "interface",
+          "line": 8,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "cq5doh4f24evc4ewzhg5yf3",
+      "data": {}
+    },
+    "pixne08f9hda3vzcetj2jvv": {
+      "id": "pixne08f9hda3vzcetj2jvv",
+      "title": "Deque",
+      "desc": "",
+      "updated": 1682276469252,
+      "created": 1682276327212,
+      "custom": {},
+      "fname": "datastructures.deque",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "63d7dcb2ed5c96d72d3df6248d1d3385",
+      "links": [],
+      "anchors": {
+        "interface": {
+          "type": "header",
+          "text": "interface",
+          "value": "interface",
+          "line": 8,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "cq5doh4f24evc4ewzhg5yf3",
+      "data": {}
+    },
+    "akgpjs39sueidxnil3k1feg": {
+      "id": "akgpjs39sueidxnil3k1feg",
+      "title": "Databases",
+      "desc": "",
+      "updated": 1677667307636,
+      "created": 1677667307636,
+      "custom": {},
+      "fname": "databases",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "8953b30ca1e59cfb939b426fc711e31e",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "tn0a5nqbrce9yebvej9h736"
+      ],
+      "parent": "txvdlk2mbhl2y2muokxxozo",
+      "data": {}
+    },
+    "tn0a5nqbrce9yebvej9h736": {
+      "id": "tn0a5nqbrce9yebvej9h736",
+      "title": "Oracle",
+      "desc": "",
+      "updated": 1689939591871,
+      "created": 1677666402987,
+      "custom": {},
+      "fname": "databases.oracle",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "32362a52ce47aaa7b416c5a039a23867",
+      "links": [],
+      "anchors": {
+        "export-a-database-dump": {
+          "type": "header",
+          "text": "Export a database dump",
+          "value": "export-a-database-dump",
+          "line": 8,
+          "column": 0,
+          "depth": 3
+        },
+        "create-a-new-pluggable-database-oracle-21c": {
+          "type": "header",
+          "text": "Create a new pluggable database (oracle 21c)",
+          "value": "create-a-new-pluggable-database-oracle-21c",
+          "line": 22,
+          "column": 0,
+          "depth": 3
+        },
+        "list-pluggable-databases": {
+          "type": "header",
+          "text": "List pluggable databases",
+          "value": "list-pluggable-databases",
+          "line": 38,
+          "column": 0,
+          "depth": 3
+        },
+        "show-open-mode-status-of-pluggable-databases": {
+          "type": "header",
+          "text": "Show open mode status of pluggable databases",
+          "value": "show-open-mode-status-of-pluggable-databases",
+          "line": 45,
+          "column": 0,
+          "depth": 3
+        },
+        "change-pdb-to-read-write": {
+          "type": "header",
+          "text": "change pdb to READ WRITE",
+          "value": "change-pdb-to-read-write",
+          "line": 53,
+          "column": 0,
+          "depth": 3
+        },
+        "save-pdb-state-so-you-dont-have-to-manually-open": {
+          "type": "header",
+          "text": "save pdb state so you don't have to manually open",
+          "value": "save-pdb-state-so-you-dont-have-to-manually-open",
+          "line": 58,
+          "column": 0,
+          "depth": 3
+        },
+        "deleting-a-pluggable-database": {
+          "type": "header",
+          "text": "deleting a pluggable database",
+          "value": "deleting-a-pluggable-database",
+          "line": 63,
+          "column": 0,
+          "depth": 3
+        },
+        "switching-session-container": {
+          "type": "header",
+          "text": "switching session container",
+          "value": "switching-session-container",
+          "line": 71,
+          "column": 0,
+          "depth": 3
+        },
+        "check-oracle-21-xe-pdb-data-usage": {
+          "type": "header",
+          "text": "check oracle 21 xe pdb data usage",
+          "value": "check-oracle-21-xe-pdb-data-usage",
+          "line": 78,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "akgpjs39sueidxnil3k1feg",
+      "data": {}
+    }
+  },
+  "domains": [
+    {
+      "id": "txvdlk2mbhl2y2muokxxozo",
+      "title": "Root",
+      "desc": "",
+      "updated": 1664676002873,
+      "created": 1664671276173,
+      "custom": {
+        "nav_order": 0,
+        "permalink": "/"
+      },
+      "fname": "root",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "DendronVault"
+      },
+      "contentHash": "896d57ab408d13d6cce66d3360a4c1be",
+      "links": [],
+      "anchors": {
+        "quick-access": {
+          "type": "header",
+          "text": "Quick access",
+          "value": "quick-access",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [
+        "akgpjs39sueidxnil3k1feg",
+        "cq5doh4f24evc4ewzhg5yf3",
+        "3xtbw7nonlogrlsu9k2hymz",
+        "lubegqfiz1ik4hq8fnomek2",
+        "uhd2kqv69ly9jb7r0o6dw1t",
+        "155oput5ed55eq5lxuswdw9",
+        "rftnddr5kr2oi9582nrwjxd",
+        "nm541dgoi0njzxnux7it18y",
+        "5fs80ws2li1d12hstqngu4h"
+      ],
+      "parent": null,
+      "data": {},
+      "body": "\n## Quick access\n\n- [C++ STL]([[lang.cpp.std]])"
+    }
+  ],
+  "noteIndex": {
+    "id": "txvdlk2mbhl2y2muokxxozo",
+    "title": "Root",
+    "desc": "",
+    "updated": 1664676002873,
+    "created": 1664671276173,
+    "custom": {
+      "nav_order": 0,
+      "permalink": "/"
+    },
+    "fname": "root",
+    "type": "note",
+    "vault": {
+      "fsPath": ".",
+      "selfContained": true,
+      "name": "DendronVault"
+    },
+    "contentHash": "896d57ab408d13d6cce66d3360a4c1be",
+    "links": [],
+    "anchors": {
+      "quick-access": {
+        "type": "header",
+        "text": "Quick access",
+        "value": "quick-access",
+        "line": 8,
+        "column": 0,
+        "depth": 2
+      }
+    },
+    "children": [
+      "akgpjs39sueidxnil3k1feg",
+      "cq5doh4f24evc4ewzhg5yf3",
+      "3xtbw7nonlogrlsu9k2hymz",
+      "lubegqfiz1ik4hq8fnomek2",
+      "uhd2kqv69ly9jb7r0o6dw1t",
+      "155oput5ed55eq5lxuswdw9",
+      "rftnddr5kr2oi9582nrwjxd",
+      "nm541dgoi0njzxnux7it18y",
+      "5fs80ws2li1d12hstqngu4h"
+    ],
+    "parent": null,
+    "data": {},
+    "body": "\n## Quick access\n\n- [C++ STL]([[lang.cpp.std]])"
+  },
+  "vaults": [
+    {
+      "fsPath": ".",
+      "selfContained": true,
+      "name": "DendronVault"
+    }
+  ]
+}

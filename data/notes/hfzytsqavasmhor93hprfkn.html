@@ -1,0 +1,62 @@
+<h1 id="variant">Variant<a aria-hidden="true" class="anchor-heading icon-link" href="#variant"></a></h1>
+<h3 id="summary">Summary<a aria-hidden="true" class="anchor-heading icon-link" href="#summary"></a></h3>
+<p><code>std::variant</code> is a type-safe union and was added as part of C++17. It's a class template that can
+hold values of different types but only one at a time. It is similar to <code>std::any</code> but it can only
+hold types that are specified in the template parameters.</p>
+<p>Before <code>std::variant</code>, developers would use unions to hold different types. However, unions are
+unsafe because they don't keep track of the type of the value they hold. This means that you can
+accidentally read the wrong type of value from a union. <code>std::variant</code> solves this problem by
+keeping track of the type of the value it holds.</p>
+<h3 id="typical-usage">Typical usage<a aria-hidden="true" class="anchor-heading icon-link" href="#typical-usage"></a></h3>
+<h4 id="database-query-results">database query results<a aria-hidden="true" class="anchor-heading icon-link" href="#database-query-results"></a></h4>
+<p>consider a function that performs a database query. It might return the query results on success,
+an error message on failure, or a boolean value indicating no results found. This function could
+return a std::variant holding either query results, a string, or a boolean.</p>
+<pre class="language-cpp"><code class="language-cpp">std<span class="token double-colon punctuation">::</span>variant<span class="token operator">&#x3C;</span>QueryResults<span class="token punctuation">,</span> std<span class="token double-colon punctuation">::</span>string<span class="token punctuation">,</span> <span class="token keyword">bool</span><span class="token operator">></span> <span class="token function">query_db</span><span class="token punctuation">(</span><span class="token keyword">const</span> std<span class="token double-colon punctuation">::</span>string<span class="token operator">&#x26;</span> query<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="abstract-syntax-tree">Abstract syntax tree<a aria-hidden="true" class="anchor-heading icon-link" href="#abstract-syntax-tree"></a></h4>
+<p>Another typical usage of std::variant is to hold different kinds of nodes in a tree-like data
+structure, like an abstract syntax tree (AST) in a compiler. Each node could be a different
+std::variant representing different types of statements or expressions in the language.</p>
+<h3 id="examples">Examples<a aria-hidden="true" class="anchor-heading icon-link" href="#examples"></a></h3>
+<h4 id="basic-usage">Basic usage<a aria-hidden="true" class="anchor-heading icon-link" href="#basic-usage"></a></h4>
+<pre class="language-cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&#x3C;iostream></span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&#x3C;variant></span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  std<span class="token double-colon punctuation">::</span>variant<span class="token operator">&#x3C;</span><span class="token keyword">int</span><span class="token punctuation">,</span> <span class="token keyword">float</span><span class="token operator">></span> v<span class="token punctuation">;</span>
+  v <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">;</span>
+  std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&#x3C;&#x3C;</span> std<span class="token double-colon punctuation">::</span><span class="token generic-function"><span class="token function">get</span><span class="token generic class-name"><span class="token operator">&#x3C;</span><span class="token keyword">int</span><span class="token operator">></span></span></span><span class="token punctuation">(</span>v<span class="token punctuation">)</span> <span class="token operator">&#x3C;&#x3C;</span> <span class="token char">'\n'</span><span class="token punctuation">;</span>
+  v <span class="token operator">=</span> <span class="token number">3.14f</span><span class="token punctuation">;</span>
+  std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&#x3C;&#x3C;</span> std<span class="token double-colon punctuation">::</span><span class="token generic-function"><span class="token function">get</span><span class="token generic class-name"><span class="token operator">&#x3C;</span><span class="token keyword">float</span><span class="token operator">></span></span></span><span class="token punctuation">(</span>v<span class="token punctuation">)</span> <span class="token operator">&#x3C;&#x3C;</span> <span class="token char">'\n'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="stdbad_variant_access">std::bad_variant_access<a aria-hidden="true" class="anchor-heading icon-link" href="#stdbad_variant_access"></a></h4>
+<p>Calling <code>std::get</code> with the wrong type will throw a <code>std::bad_variant_access</code> exception.</p>
+<pre class="language-cpp"><code class="language-cpp">std<span class="token double-colon punctuation">::</span>variant<span class="token operator">&#x3C;</span><span class="token keyword">int</span><span class="token punctuation">,</span> <span class="token keyword">float</span><span class="token operator">></span> v<span class="token punctuation">;</span>
+<span class="token keyword">try</span> <span class="token punctuation">{</span>
+  std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&#x3C;&#x3C;</span> std<span class="token double-colon punctuation">::</span><span class="token generic-function"><span class="token function">get</span><span class="token generic class-name"><span class="token operator">&#x3C;</span><span class="token keyword">float</span><span class="token operator">></span></span></span><span class="token punctuation">(</span>v<span class="token punctuation">)</span> <span class="token operator">&#x3C;&#x3C;</span> <span class="token char">'\n'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token keyword">const</span> std<span class="token double-colon punctuation">::</span>bad_variant_access<span class="token operator">&#x26;</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&#x3C;&#x3C;</span> e<span class="token punctuation">.</span><span class="token function">what</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&#x3C;&#x3C;</span> <span class="token char">'\n'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="stdget_if">std::get_if<a aria-hidden="true" class="anchor-heading icon-link" href="#stdget_if"></a></h4>
+<p>Use <code>std::get_if</code> to get a pointer to the value held by a variant.</p>
+<pre class="language-cpp"><code class="language-cpp">std<span class="token double-colon punctuation">::</span>variant<span class="token operator">&#x3C;</span><span class="token keyword">int</span><span class="token punctuation">,</span> <span class="token keyword">float</span><span class="token operator">></span> v<span class="token punctuation">;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">auto</span> pval <span class="token operator">=</span> std<span class="token double-colon punctuation">::</span><span class="token generic-function"><span class="token function">get_if</span><span class="token generic class-name"><span class="token operator">&#x3C;</span><span class="token keyword">int</span><span class="token operator">></span></span></span><span class="token punctuation">(</span><span class="token operator">&#x26;</span>v<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&#x3C;&#x3C;</span> <span class="token operator">*</span>pval <span class="token operator">&#x3C;&#x3C;</span> <span class="token char">'\n'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+  std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&#x3C;&#x3C;</span> <span class="token string">"v does not hold an int\n"</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="stdholds_alternative">std::holds_alternative<a aria-hidden="true" class="anchor-heading icon-link" href="#stdholds_alternative"></a></h4>
+<p>You can use <code>std::holds_alternative</code> to check if a variant holds a specific type.</p>
+<pre class="language-cpp"><code class="language-cpp">std<span class="token double-colon punctuation">::</span>variant<span class="token operator">&#x3C;</span><span class="token keyword">int</span><span class="token punctuation">,</span> <span class="token keyword">float</span><span class="token operator">></span> v<span class="token punctuation">;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>std<span class="token double-colon punctuation">::</span><span class="token generic-function"><span class="token function">holds_alternative</span><span class="token generic class-name"><span class="token operator">&#x3C;</span><span class="token keyword">int</span><span class="token operator">></span></span></span><span class="token punctuation">(</span>v<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&#x3C;&#x3C;</span> <span class="token string">"v holds an int\n"</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+  std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&#x3C;&#x3C;</span> <span class="token string">"v does not hold an int\n"</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>

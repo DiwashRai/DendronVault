@@ -1,0 +1,74 @@
+<h1 id="setup">Setup<a aria-hidden="true" class="anchor-heading icon-link" href="#setup"></a></h1>
+<h1 id="linux-mint-setup">Linux mint setup<a aria-hidden="true" class="anchor-heading icon-link" href="#linux-mint-setup"></a></h1>
+<p>Official guide can also be found here:<br>
+<a href="https://linuxmint-installation-guide.readthedocs.io/en/latest/">https://linuxmint-installation-guide.readthedocs.io/en/latest/</a></p>
+<h2 id="create-usb-bootable-drive">Create USB Bootable drive<a aria-hidden="true" class="anchor-heading icon-link" href="#create-usb-bootable-drive"></a></h2>
+<ul>
+<li>Download it from the main linux mint website(google)
+<ul>
+<li>Consider the cinnamon 'edge' version which will come with newer kernel</li>
+</ul>
+</li>
+<li>Use Balena etcher to flash the usb</li>
+</ul>
+<h2 id="installing-linux-mint">Installing Linux mint<a aria-hidden="true" class="anchor-heading icon-link" href="#installing-linux-mint"></a></h2>
+<ul>
+<li>When you boot from USB you need to start Linux Mint in live session where you can then access
+the installer</li>
+<li>Connect to the internet if possible. Required later for nvidia driver</li>
+<li>Installation type: Erase disk and install Linux Mint
+<ul>
+<li>CT1000P3PSSD8 - linux drive</li>
+</ul>
+</li>
+</ul>
+<h2 id="first-steps">First steps<a aria-hidden="true" class="anchor-heading icon-link" href="#first-steps"></a></h2>
+<p><strong>Desktop Colours</strong></p>
+<ul>
+<li>Dark theme</li>
+</ul>
+<p><strong>System Snapshots</strong></p>
+<ul>
+<li>Default everything</li>
+<li>Create first snapshot</li>
+</ul>
+<p><strong>Driver Manager</strong></p>
+<ul>
+<li>Use most recent/recommended</li>
+</ul>
+<p><strong>Update Manager</strong></p>
+<ul>
+<li>Opt to use a local mirror</li>
+<li>Install updates</li>
+</ul>
+<h2 id="settings">Settings<a aria-hidden="true" class="anchor-heading icon-link" href="#settings"></a></h2>
+<ul>
+<li>Check trackpad two finger right click works</li>
+</ul>
+<h2 id="initial-packages">Initial packages<a aria-hidden="true" class="anchor-heading icon-link" href="#initial-packages"></a></h2>
+<ul>
+<li>git stow kitty</li>
+<li>dmenu dunst rofi</li>
+<li>python3 python3-pip</li>
+<li>cmake nodejs npm</li>
+<li>arandr autorandr</li>
+<li>brave-browser
+<ul>
+<li><a href="https://brave.com/linux/">https://brave.com/linux/</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="install-nerdfont">Install nerdfont<a aria-hidden="true" class="anchor-heading icon-link" href="#install-nerdfont"></a></h2>
+<ul>
+<li>~/.local/share/fonts/</li>
+<li>JetBrainsMono nerdfont</li>
+</ul>
+<h2 id="qtile-setup">qtile setup<a aria-hidden="true" class="anchor-heading icon-link" href="#qtile-setup"></a></h2>
+<pre><code>sudo apt install xserver-xorg xinit
+sudo apt install libpangocairo-1.0-0
+sudo apt install python3-pip python3-xcffib python3-cairocffi
+
+cd ~/code/public-repos
+cd qtile
+pip install .
+</code></pre>

@@ -1,0 +1,83 @@
+<h1 id="git">Git<a aria-hidden="true" class="anchor-heading icon-link" href="#git"></a></h1>
+<h2 id="general-commands">General commands<a aria-hidden="true" class="anchor-heading icon-link" href="#general-commands"></a></h2>
+<h3 id="create-a-new-branch-and-push-to-remote-repository">Create a new branch and push to remote repository<a aria-hidden="true" class="anchor-heading icon-link" href="#create-a-new-branch-and-push-to-remote-repository"></a></h3>
+<pre class="language-shell"><code class="language-shell"><span class="token function">git</span> checkout -b <span class="token operator">&#x3C;</span>branch<span class="token operator">></span>
+<span class="token comment"># Edit files, add and commit. Then push with the -u (short for --set-upstream) option</span>
+<span class="token function">git</span> push -u origin <span class="token operator">&#x3C;</span>branch<span class="token operator">></span>
+</code></pre>
+<h3 id="revert-commit">Revert commit<a aria-hidden="true" class="anchor-heading icon-link" href="#revert-commit"></a></h3>
+<p>To commit the previous commit</p>
+<pre class="language-shell"><code class="language-shell"><span class="token comment"># get commit hash of desired commit. In this case the previous one</span>
+<span class="token function">git</span> log -1 
+<span class="token comment"># git revert with correct hash</span>
+<span class="token function">git</span> revert 11d172998d218c5e25e949fc82a3df3b41a241bd
+</code></pre>
+<h3 id="removing-untracked-files">Removing untracked files<a aria-hidden="true" class="anchor-heading icon-link" href="#removing-untracked-files"></a></h3>
+<pre class="language-shell"><code class="language-shell"><span class="token comment"># show what files would be deleted</span>
+<span class="token function">git</span> clean -n
+<span class="token comment"># show what directories would be deleted</span>
+<span class="token function">git</span> clean -nd
+<span class="token comment"># delete untracked files</span>
+<span class="token function">git</span> clean -f
+<span class="token comment"># delete untracked files in specific folder</span>
+<span class="token function">git</span> clean -f path/to/folder
+<span class="token comment"># delete untracked files AND folders</span>
+<span class="token function">git</span> clean -fd
+<span class="token comment"># delete ignored files</span>
+<span class="token function">git</span> clean -fx
+</code></pre>
+<h3 id="git-reset">Git reset<a aria-hidden="true" class="anchor-heading icon-link" href="#git-reset"></a></h3>
+<p>Command to unstage changes</p>
+<pre class="language-shell"><code class="language-shell"><span class="token comment"># commit parameter is optional. By Default it points to head.</span>
+<span class="token function">git</span> reset <span class="token operator">&#x3C;</span>commit<span class="token operator">></span> -- <span class="token operator">&#x3C;</span>path<span class="token operator">></span>
+<span class="token comment"># unstage all changes and discard them.</span>
+<span class="token function">git</span> reset - -hard <span class="token operator">&#x3C;</span>commit<span class="token operator">></span>
+</code></pre>
+<h3 id="discard-unstaged-changes-on-git">Discard unstaged changes on Git<a aria-hidden="true" class="anchor-heading icon-link" href="#discard-unstaged-changes-on-git"></a></h3>
+<p>To discard unstaged changes, use the <code>git checkout</code> command.<br>
+This means to undo any local changed that a checked in file may have  </p>
+<pre class="language-shell"><code class="language-shell"><span class="token comment"># to unstage on file at a time</span>
+<span class="token function">git</span> restore path/to/file/to/revert
+<span class="token comment"># to unstage everything in one go</span>
+<span class="token function">git</span> restore <span class="token builtin class-name">.</span>
+</code></pre>
+<h3 id="git-add">Git add<a aria-hidden="true" class="anchor-heading icon-link" href="#git-add"></a></h3>
+<pre class="language-shell"><code class="language-shell"><span class="token comment"># stage all changes</span>
+<span class="token function">git</span> <span class="token function">add</span> -A
+<span class="token comment"># stages new files and modifications, **without deletions**</span>
+<span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+<span class="token comment"># stages modifications and deletions, **without new files**</span>
+<span class="token function">git</span> <span class="token function">add</span> -u
+</code></pre>
+<h3 id="edit-git-config-file">Edit git config file<a aria-hidden="true" class="anchor-heading icon-link" href="#edit-git-config-file"></a></h3>
+<pre class="language-shell"><code class="language-shell"><span class="token function">git</span> config --config --edit
+</code></pre>
+<h3 id="reading-last-commit">Reading last commit<a aria-hidden="true" class="anchor-heading icon-link" href="#reading-last-commit"></a></h3>
+<pre class="language-shell"><code class="language-shell"><span class="token comment"># show last commit only</span>
+<span class="token function">git</span> log -1
+<span class="token comment"># show head commit</span>
+<span class="token function">git</span> show
+</code></pre>
+<h3 id="git-commit-with-specific-date">Git commit with specific date<a aria-hidden="true" class="anchor-heading icon-link" href="#git-commit-with-specific-date"></a></h3>
+<pre class="language-shell"><code class="language-shell"><span class="token function">git</span> commit --date <span class="token number">2022</span>-01-20
+</code></pre>
+<h2 id="creating-git-repo-locally">Creating Git repo locally<a aria-hidden="true" class="anchor-heading icon-link" href="#creating-git-repo-locally"></a></h2>
+<ul>
+<li>Run <code>git init</code> in the project directory</li>
+<li>Create .gitignore fiel</li>
+</ul>
+<h2 id="pushing-existing-local-git-repo-to-github">Pushing Existing local git repo to GitHub<a aria-hidden="true" class="anchor-heading icon-link" href="#pushing-existing-local-git-repo-to-github"></a></h2>
+<ul>
+<li>Make sure you have a local git repo initialised</li>
+<li>Create empty git repo on GitHub</li>
+<li>Open a terminal and run:
+<ul>
+<li><code>git remote add origin &#x3C;github repo link></code></li>
+<li><code>git push -u origin main</code>
+<ul>
+<li><code>-u --set-upstream</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>

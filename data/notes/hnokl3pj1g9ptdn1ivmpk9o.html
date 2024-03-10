@@ -1,0 +1,36 @@
+<h1 id="tmux">Tmux<a aria-hidden="true" class="anchor-heading icon-link" href="#tmux"></a></h1>
+<h3 id="install">install<a aria-hidden="true" class="anchor-heading icon-link" href="#install"></a></h3>
+<ul>
+<li><code>sudo dnf install tmux</code></li>
+<li>Install tmux plugin manager
+<ul>
+<li><code>git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm</code></li>
+</ul>
+</li>
+<li>ensure tmux conf exists at '~/.config/tmux/tmux.conf'
+<ul>
+<li>cd .dotfiles</li>
+<li>stow tmux</li>
+</ul>
+</li>
+<li>Install plugins
+<ul>
+<li><code>tmux source ~/.tmux.conf</code></li>
+<li><code>prefix + I</code> (capital i, as in Install) to fetch the plugin</li>
+</ul>
+</li>
+</ul>
+<h3 id="cheat-sheet">Cheat sheet<a aria-hidden="true" class="anchor-heading icon-link" href="#cheat-sheet"></a></h3>
+<p><strong>New session</strong></p>
+<ul>
+<li><code>tmux</code></li>
+</ul>
+<p><strong>Start new session with name mysession</strong></p>
+<ul>
+<li><code>tmux new -s mysession</code></li>
+</ul>
+<p><strong>List all sessions</strong></p>
+<ul>
+<li><code>tmux ls</code></li>
+<li>Ctrl + b, s</li>
+</ul>

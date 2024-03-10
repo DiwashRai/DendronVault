@@ -1,0 +1,28 @@
+<h1 id="poetry">Poetry<a aria-hidden="true" class="anchor-heading icon-link" href="#poetry"></a></h1>
+<h2 id="install">Install<a aria-hidden="true" class="anchor-heading icon-link" href="#install"></a></h2>
+<p><code>pip install poetry</code></p>
+<h2 id="setting-up-new-project">Setting up new project<a aria-hidden="true" class="anchor-heading icon-link" href="#setting-up-new-project"></a></h2>
+<p><code>poetry new poetry-demo</code></p>
+<p>Creates the following content:</p>
+<pre><code>poetry-demo
+├── pyproject.toml
+├── README.md
+├── poetry_demo
+│   └── __init__.py
+└── tests
+    └── __init__.py
+</code></pre>
+<h2 id="initialise-pre-existing-project">Initialise pre-existing project<a aria-hidden="true" class="anchor-heading icon-link" href="#initialise-pre-existing-project"></a></h2>
+<p><code>poetry init</code></p>
+<h2 id="poetry-venvs-in-project-itself">Poetry venvs in project itself<a aria-hidden="true" class="anchor-heading icon-link" href="#poetry-venvs-in-project-itself"></a></h2>
+<p><code>poetry config virtualenvs.in-project true</code></p>
+<h2 id="install-dependencies">Install dependencies<a aria-hidden="true" class="anchor-heading icon-link" href="#install-dependencies"></a></h2>
+<p><code>poetry install</code>
+Also makes it possible to run the program with a start script</p>
+<h2 id="activate-virtual-env-in-current-shell">Activate virtual env in current shell<a aria-hidden="true" class="anchor-heading icon-link" href="#activate-virtual-env-in-current-shell"></a></h2>
+<p><code>poetry shell</code></p>
+<h2 id="add-dependency">Add dependency<a aria-hidden="true" class="anchor-heading icon-link" href="#add-dependency"></a></h2>
+<pre><code>poetry shell
+poetry add textual
+poetry add textual-dev --group dev
+</code></pre>

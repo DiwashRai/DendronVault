@@ -1,0 +1,9 @@
+<h1 id="latex">Latex<a aria-hidden="true" class="anchor-heading icon-link" href="#latex"></a></h1>
+<h2 id="fedora">Fedora<a aria-hidden="true" class="anchor-heading icon-link" href="#fedora"></a></h2>
+<h3 id="install">Install<a aria-hidden="true" class="anchor-heading icon-link" href="#install"></a></h3>
+<pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> dnf <span class="token function">install</span> texlive-scheme-full
+<span class="token function">sudo</span> dnf <span class="token function">install</span> zathura zathura-pdf-mupdf
+</code></pre>
+<h3 id="compile">Compile<a aria-hidden="true" class="anchor-heading icon-link" href="#compile"></a></h3>
+<pre class="language-bash"><code class="language-bash">latexmk -pdf -pvc main.tex
+</code></pre>

@@ -1,0 +1,92 @@
+<h1 id="setup">Setup<a aria-hidden="true" class="anchor-heading icon-link" href="#setup"></a></h1>
+<h1 id="fedora-workstation-setup">Fedora workstation setup<a aria-hidden="true" class="anchor-heading icon-link" href="#fedora-workstation-setup"></a></h1>
+<h2 id="create-usb-bootable-drive">Create USB bootable drive<a aria-hidden="true" class="anchor-heading icon-link" href="#create-usb-bootable-drive"></a></h2>
+<ul>
+<li>Download Fedora Workstation ISO from <a href="https://getfedora.org/en/workstation/download/">here</a></li>
+<li>Download Rufus from <a href="https://rufus.ie/">here</a></li>
+<li>Open Rufus and select the USB drive</li>
+<li>Select the Fedora ISO</li>
+<li>Click start</li>
+</ul>
+<h2 id="disable-secure-boot">Disable secure boot<a aria-hidden="true" class="anchor-heading icon-link" href="#disable-secure-boot"></a></h2>
+<ul>
+<li>Restart the computer</li>
+<li>Press F2 to enter BIOS</li>
+<li>Navigate to the security tab</li>
+<li>Disable secure boot</li>
+</ul>
+<h2 id="install-fedora">Install Fedora<a aria-hidden="true" class="anchor-heading icon-link" href="#install-fedora"></a></h2>
+<ul>
+<li>Restart the computer</li>
+<li>Press F12 to enter boot menu</li>
+<li>Select the USB drive</li>
+<li>Select install Fedora</li>
+<li>Select the language</li>
+<li>Select the keyboard layout</li>
+<li>Select the installation destination
+<ul>
+<li>Use custom partitioning</li>
+<li>Click "click here to create them automatically"</li>
+<li>Ensure ext4 is selected not btrfs</li>
+<li>Click done</li>
+</ul>
+</li>
+</ul>
+<h2 id="setup-gnome-desktop-environment">Setup gnome desktop environment<a aria-hidden="true" class="anchor-heading icon-link" href="#setup-gnome-desktop-environment"></a></h2>
+<ul>
+<li>Follow initial setup instructions</li>
+<li>connect to wifi</li>
+</ul>
+<h2 id="configure-dnf-and-update">Configure dnf and update<a aria-hidden="true" class="anchor-heading icon-link" href="#configure-dnf-and-update"></a></h2>
+<ul>
+<li>sudo vi /etc/dnf/dnf.conf
+<ul>
+<li>add <code>max_parallel_downloads=10</code></li>
+<li>add <code>keepcache=true</code></li>
+</ul>
+</li>
+<li>sudo dnf update</li>
+</ul>
+<h2 id="enable-rpm-fusion">Enable RPM Fusion<a aria-hidden="true" class="anchor-heading icon-link" href="#enable-rpm-fusion"></a></h2>
+<ul>
+<li>reference: <a href="https://rpmfusion.org/Configuration">https://rpmfusion.org/Configuration</a>
+<ul>
+<li>run 'Fedora with dnf' command</li>
+<li>AppStream metadata command</li>
+<li>Multimedia on Fedora
+<ul>
+<li>fullfmpeg</li>
+<li>install additional codecs</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo</code></li>
+</ul>
+<h2 id="install-nvidia-drivers">Install NVIDIA drivers<a aria-hidden="true" class="anchor-heading icon-link" href="#install-nvidia-drivers"></a></h2>
+<ul>
+<li>reference: <a href="https://rpmfusion.org/Howto/NVIDIA">https://rpmfusion.org/Howto/NVIDIA</a>
+<ul>
+<li><code>sudo dnf update -y</code> - reboot if kernel updated</li>
+<li><code>sudo dnf install akmod-nvidia</code></li>
+<li><code>sudo dnf install xorg-x11-drv-nvidia-cuda</code> - optional for cuda/nvdec/nvenc</li>
+</ul>
+</li>
+</ul>
+<h2 id="gnome-tweaks">Gnome tweaks<a aria-hidden="true" class="anchor-heading icon-link" href="#gnome-tweaks"></a></h2>
+<ul>
+<li><code>sudo dnf install gnome-tweaks</code>
+<ul>
+<li>enable minimize/maximize buttons</li>
+<li>Mouse acceleration profile: Flat</li>
+</ul>
+</li>
+</ul>
+<h2 id="install-qtile">Install Qtile<a aria-hidden="true" class="anchor-heading icon-link" href="#install-qtile"></a></h2>
+<ul>
+<li><code>sudo dnf copr enable frostyx/qtile</code></li>
+<li><code>sudo dnf install qtile</code></li>
+<li><code>sudo dnf install qtile-extras</code></li>
+</ul>
+<h2 id="extra-setups">extra setups<a aria-hidden="true" class="anchor-heading icon-link" href="#extra-setups"></a></h2>
+<p><a href="/DendronVault/notes/qogf6mgpnnfneh0wjxxl7dh">Additional Setup</a></p>

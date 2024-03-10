@@ -1,0 +1,35 @@
+<h1 id="launch-json">Launch Json<a aria-hidden="true" class="anchor-heading icon-link" href="#launch-json"></a></h1>
+<h3 id="cpp-debug">cpp debug<a aria-hidden="true" class="anchor-heading icon-link" href="#cpp-debug"></a></h3>
+<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+    <span class="token comment">// Use IntelliSense to learn about possible attributes.</span>
+    <span class="token comment">// Hover to view descriptions of existing attributes.</span>
+    <span class="token comment">// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387</span>
+    <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"0.2.0"</span><span class="token punctuation">,</span>
+    <span class="token property">"configurations"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Dbg Monte Carlo"</span><span class="token punctuation">,</span>
+            <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"cppdbg"</span><span class="token punctuation">,</span>
+            <span class="token property">"request"</span><span class="token operator">:</span> <span class="token string">"launch"</span><span class="token punctuation">,</span>
+            <span class="token property">"program"</span><span class="token operator">:</span> <span class="token string">"${workspaceFolder}/build/Debug/monte-carlo-black-scholes/run-monte-carlo"</span><span class="token punctuation">,</span>
+            <span class="token property">"args"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">"stopAtEntry"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token property">"cwd"</span><span class="token operator">:</span> <span class="token string">"${fileDirname}"</span><span class="token punctuation">,</span>
+            <span class="token property">"environment"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">"externalConsole"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token property">"MIMode"</span><span class="token operator">:</span> <span class="token string">"gdb"</span><span class="token punctuation">,</span>
+            <span class="token property">"setupCommands"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"Enable pretty-printing for gdb"</span><span class="token punctuation">,</span>
+                    <span class="token property">"text"</span><span class="token operator">:</span> <span class="token string">"-enable-pretty-printing"</span><span class="token punctuation">,</span>
+                    <span class="token property">"ignoreFailures"</span><span class="token operator">:</span> <span class="token boolean">true</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">"description"</span><span class="token operator">:</span>  <span class="token string">"Set Disassembly Flavor to Intel"</span><span class="token punctuation">,</span>
+                    <span class="token property">"text"</span><span class="token operator">:</span> <span class="token string">"-gdb-set disassembly-flavor intel"</span><span class="token punctuation">,</span>
+                    <span class="token property">"ignoreFailures"</span><span class="token operator">:</span> <span class="token boolean">true</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>

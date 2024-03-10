@@ -1,0 +1,581 @@
+{
+  "roots": [
+    {
+      "key": "akgpjs39sueidxnil3k1feg",
+      "title": "Databases",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "DendronVault",
+      "children": [
+        {
+          "key": "tn0a5nqbrce9yebvej9h736",
+          "title": "Oracle",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "DendronVault",
+          "children": []
+        }
+      ]
+    },
+    {
+      "key": "cq5doh4f24evc4ewzhg5yf3",
+      "title": "Datastructures",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "DendronVault",
+      "children": [
+        {
+          "key": "pixne08f9hda3vzcetj2jvv",
+          "title": "Deque",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "DendronVault",
+          "children": []
+        },
+        {
+          "key": "mel9qapq3oyqb5gpd7onyeq",
+          "title": "Dynamic Array",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "DendronVault",
+          "children": []
+        },
+        {
+          "key": "azirqu78s4pdbsosv0gqakm",
+          "title": "Hash Map",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "DendronVault",
+          "children": []
+        },
+        {
+          "key": "3xirn9y2ejhs5hgoh6ko9i1",
+          "title": "Heap",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "DendronVault",
+          "children": []
+        },
+        {
+          "key": "hame6ftjq5bra5fzc98u64y",
+          "title": "Linked List",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "DendronVault",
+          "children": []
+        },
+        {
+          "key": "r44heu54fmmeeaz7qccmqba",
+          "title": "Map",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "DendronVault",
+          "children": []
+        },
+        {
+          "key": "j6629ov8i69dg12ifxdbzqa",
+          "title": "Queue",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "DendronVault",
+          "children": []
+        },
+        {
+          "key": "wu8egj9yesx6l8j3odpa6br",
+          "title": "Set",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "DendronVault",
+          "children": []
+        },
+        {
+          "key": "xgleienln5stv551d6l7qv6",
+          "title": "Stack",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "DendronVault",
+          "children": []
+        }
+      ]
+    },
+    {
+      "key": "3xtbw7nonlogrlsu9k2hymz",
+      "title": "Katas",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "DendronVault",
+      "children": []
+    },
+    {
+      "key": "lubegqfiz1ik4hq8fnomek2",
+      "title": "Lang",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "DendronVault",
+      "children": [
+        {
+          "key": "7k937deztzwxmov1gbde86f",
+          "title": "Cpp",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "DendronVault",
+          "children": [
+            {
+              "key": "ye47jxon8i7r302swio082v",
+              "title": "Lvalues and Rvalues",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "DendronVault",
+              "children": []
+            },
+            {
+              "key": "q1m5qyz4a56v9evbk2eujha",
+              "title": "Move Semantics",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "DendronVault",
+              "children": []
+            },
+            {
+              "key": "vs1fiq1wm14sf0cqq4ok5vj",
+              "title": "Std",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "DendronVault",
+              "children": [
+                {
+                  "key": "gxtjff8r9znuypi2q4r5gjw",
+                  "title": "Any",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "DendronVault",
+                  "children": []
+                },
+                {
+                  "key": "9q02r7785re7jcvazvp6q54",
+                  "title": "Priority_queue",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "DendronVault",
+                  "children": []
+                },
+                {
+                  "key": "hfzytsqavasmhor93hprfkn",
+                  "title": "Variant",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "DendronVault",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "key": "3vtad9ehlxwa5n2gffrjsr1",
+              "title": "Versions",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "DendronVault",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "uhd2kqv69ly9jb7r0o6dw1t",
+      "title": "Libs",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "DendronVault",
+      "children": [
+        {
+          "key": "kmywt3vnihnkvqoabgzpuje",
+          "title": "Quickfix",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "DendronVault",
+          "children": []
+        }
+      ]
+    },
+    {
+      "key": "155oput5ed55eq5lxuswdw9",
+      "title": "Linux",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "DendronVault",
+      "children": [
+        {
+          "key": "qogf6mgpnnfneh0wjxxl7dh",
+          "title": "Additional Setup",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "DendronVault",
+          "children": []
+        },
+        {
+          "key": "py8ct9qauho6ix6jxnsx6ho",
+          "title": "Cron",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "DendronVault",
+          "children": []
+        },
+        {
+          "key": "nm65zw8skkor2pnqyz8gfd7",
+          "title": "Fedora",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "DendronVault",
+          "children": [
+            {
+              "key": "56lg0varlaxfojim4yyv3af",
+              "title": "Nvidia Kernel Module Fix",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "DendronVault",
+              "children": []
+            },
+            {
+              "key": "d7p64g6cgi98y6dyktth97g",
+              "title": "Setup",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "DendronVault",
+              "children": []
+            }
+          ]
+        },
+        {
+          "key": "imrdta9hjnuhto6exns9fx5",
+          "title": "Mint",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "DendronVault",
+          "children": [
+            {
+              "key": "7lv6hr002wak3sm3ufa6p38",
+              "title": "Setup",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "DendronVault",
+              "children": []
+            }
+          ]
+        },
+        {
+          "key": "z8fzkjo0zke873q87zu6t71",
+          "title": "Mouse Sensitivity",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "DendronVault",
+          "children": []
+        },
+        {
+          "key": "7bty8bp48bpjoancqe5ksc9",
+          "title": "Qtile",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "DendronVault",
+          "children": [
+            {
+              "key": "bbyi6fiywaab0zcf4hvrsjx",
+              "title": "Debian",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "DendronVault",
+              "children": []
+            }
+          ]
+        },
+        {
+          "key": "j0z7jbe315pr82284cgv3z3",
+          "title": "Raspberry Pi",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "DendronVault",
+          "children": []
+        }
+      ]
+    },
+    {
+      "key": "rftnddr5kr2oi9582nrwjxd",
+      "title": "Mac",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "DendronVault",
+      "children": []
+    },
+    {
+      "key": "nm541dgoi0njzxnux7it18y",
+      "title": "Tools",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "DendronVault",
+      "children": [
+        {
+          "key": "acildvugww1my1n5ruojfec",
+          "title": "Clang Format",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "DendronVault",
+          "children": []
+        },
+        {
+          "key": "6w1zsa6tm5l7qqxueht03ps",
+          "title": "Clion",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "DendronVault",
+          "children": []
+        },
+        {
+          "key": "hp7jv15215pi0s92tkgr4ob",
+          "title": "Cmake",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "DendronVault",
+          "children": []
+        },
+        {
+          "key": "6kpo1942ysua78f6grwyijm",
+          "title": "Fzf",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "DendronVault",
+          "children": []
+        },
+        {
+          "key": "04uwy15ipgua4lzrmnrr5vg",
+          "title": "Git",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "DendronVault",
+          "children": []
+        },
+        {
+          "key": "r2y0vlbadwpwfpyzzsdvr9k",
+          "title": "Hashing",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "DendronVault",
+          "children": []
+        },
+        {
+          "key": "hs1l77dogz2bmr7wz3sto5x",
+          "title": "Jupyter",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "DendronVault",
+          "children": []
+        },
+        {
+          "key": "lhqlehyuif2q53xmv2q1mq7",
+          "title": "Latex",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "DendronVault",
+          "children": []
+        },
+        {
+          "key": "phdf8jn0143ohntpntjx0dh",
+          "title": "Obsidian",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "DendronVault",
+          "children": []
+        },
+        {
+          "key": "lzel0xtqe117z2xkki5gi51",
+          "title": "Perf",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "DendronVault",
+          "children": []
+        },
+        {
+          "key": "e7ccw8km6u0an5hyxtkb6zd",
+          "title": "Python",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "DendronVault",
+          "children": [
+            {
+              "key": "055m861v4j7qqpextyt7zak",
+              "title": "Poetry",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "DendronVault",
+              "children": []
+            }
+          ]
+        },
+        {
+          "key": "hnokl3pj1g9ptdn1ivmpk9o",
+          "title": "Tmux",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "DendronVault",
+          "children": []
+        },
+        {
+          "key": "k7cec753w8noenycl10n1lh",
+          "title": "Vscode",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "DendronVault",
+          "children": [
+            {
+              "key": "3r1m1ztnh7xno6m00fnz03t",
+              "title": "Launch Json",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "DendronVault",
+              "children": []
+            }
+          ]
+        },
+        {
+          "key": "0fi716nmxumrz83tlwkr75n",
+          "title": "Windows Terminal",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "DendronVault",
+          "children": []
+        },
+        {
+          "key": "s24j0yubtdosu348c8gbgoe",
+          "title": "Wsl",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "DendronVault",
+          "children": []
+        }
+      ]
+    },
+    {
+      "key": "5fs80ws2li1d12hstqngu4h",
+      "title": "Windows",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "DendronVault",
+      "children": []
+    }
+  ],
+  "child2parent": {
+    "akgpjs39sueidxnil3k1feg": null,
+    "tn0a5nqbrce9yebvej9h736": "akgpjs39sueidxnil3k1feg",
+    "cq5doh4f24evc4ewzhg5yf3": null,
+    "pixne08f9hda3vzcetj2jvv": "cq5doh4f24evc4ewzhg5yf3",
+    "mel9qapq3oyqb5gpd7onyeq": "cq5doh4f24evc4ewzhg5yf3",
+    "azirqu78s4pdbsosv0gqakm": "cq5doh4f24evc4ewzhg5yf3",
+    "3xirn9y2ejhs5hgoh6ko9i1": "cq5doh4f24evc4ewzhg5yf3",
+    "hame6ftjq5bra5fzc98u64y": "cq5doh4f24evc4ewzhg5yf3",
+    "r44heu54fmmeeaz7qccmqba": "cq5doh4f24evc4ewzhg5yf3",
+    "j6629ov8i69dg12ifxdbzqa": "cq5doh4f24evc4ewzhg5yf3",
+    "wu8egj9yesx6l8j3odpa6br": "cq5doh4f24evc4ewzhg5yf3",
+    "xgleienln5stv551d6l7qv6": "cq5doh4f24evc4ewzhg5yf3",
+    "3xtbw7nonlogrlsu9k2hymz": null,
+    "lubegqfiz1ik4hq8fnomek2": null,
+    "7k937deztzwxmov1gbde86f": "lubegqfiz1ik4hq8fnomek2",
+    "ye47jxon8i7r302swio082v": "7k937deztzwxmov1gbde86f",
+    "q1m5qyz4a56v9evbk2eujha": "7k937deztzwxmov1gbde86f",
+    "vs1fiq1wm14sf0cqq4ok5vj": "7k937deztzwxmov1gbde86f",
+    "gxtjff8r9znuypi2q4r5gjw": "vs1fiq1wm14sf0cqq4ok5vj",
+    "9q02r7785re7jcvazvp6q54": "vs1fiq1wm14sf0cqq4ok5vj",
+    "hfzytsqavasmhor93hprfkn": "vs1fiq1wm14sf0cqq4ok5vj",
+    "3vtad9ehlxwa5n2gffrjsr1": "7k937deztzwxmov1gbde86f",
+    "uhd2kqv69ly9jb7r0o6dw1t": null,
+    "kmywt3vnihnkvqoabgzpuje": "uhd2kqv69ly9jb7r0o6dw1t",
+    "155oput5ed55eq5lxuswdw9": null,
+    "qogf6mgpnnfneh0wjxxl7dh": "155oput5ed55eq5lxuswdw9",
+    "py8ct9qauho6ix6jxnsx6ho": "155oput5ed55eq5lxuswdw9",
+    "nm65zw8skkor2pnqyz8gfd7": "155oput5ed55eq5lxuswdw9",
+    "56lg0varlaxfojim4yyv3af": "nm65zw8skkor2pnqyz8gfd7",
+    "d7p64g6cgi98y6dyktth97g": "nm65zw8skkor2pnqyz8gfd7",
+    "imrdta9hjnuhto6exns9fx5": "155oput5ed55eq5lxuswdw9",
+    "7lv6hr002wak3sm3ufa6p38": "imrdta9hjnuhto6exns9fx5",
+    "z8fzkjo0zke873q87zu6t71": "155oput5ed55eq5lxuswdw9",
+    "7bty8bp48bpjoancqe5ksc9": "155oput5ed55eq5lxuswdw9",
+    "bbyi6fiywaab0zcf4hvrsjx": "7bty8bp48bpjoancqe5ksc9",
+    "j0z7jbe315pr82284cgv3z3": "155oput5ed55eq5lxuswdw9",
+    "rftnddr5kr2oi9582nrwjxd": null,
+    "nm541dgoi0njzxnux7it18y": null,
+    "acildvugww1my1n5ruojfec": "nm541dgoi0njzxnux7it18y",
+    "6w1zsa6tm5l7qqxueht03ps": "nm541dgoi0njzxnux7it18y",
+    "hp7jv15215pi0s92tkgr4ob": "nm541dgoi0njzxnux7it18y",
+    "6kpo1942ysua78f6grwyijm": "nm541dgoi0njzxnux7it18y",
+    "04uwy15ipgua4lzrmnrr5vg": "nm541dgoi0njzxnux7it18y",
+    "r2y0vlbadwpwfpyzzsdvr9k": "nm541dgoi0njzxnux7it18y",
+    "hs1l77dogz2bmr7wz3sto5x": "nm541dgoi0njzxnux7it18y",
+    "lhqlehyuif2q53xmv2q1mq7": "nm541dgoi0njzxnux7it18y",
+    "phdf8jn0143ohntpntjx0dh": "nm541dgoi0njzxnux7it18y",
+    "lzel0xtqe117z2xkki5gi51": "nm541dgoi0njzxnux7it18y",
+    "e7ccw8km6u0an5hyxtkb6zd": "nm541dgoi0njzxnux7it18y",
+    "055m861v4j7qqpextyt7zak": "e7ccw8km6u0an5hyxtkb6zd",
+    "hnokl3pj1g9ptdn1ivmpk9o": "nm541dgoi0njzxnux7it18y",
+    "k7cec753w8noenycl10n1lh": "nm541dgoi0njzxnux7it18y",
+    "3r1m1ztnh7xno6m00fnz03t": "k7cec753w8noenycl10n1lh",
+    "0fi716nmxumrz83tlwkr75n": "nm541dgoi0njzxnux7it18y",
+    "s24j0yubtdosu348c8gbgoe": "nm541dgoi0njzxnux7it18y",
+    "5fs80ws2li1d12hstqngu4h": null
+  },
+  "notesLabelById": {
+    "akgpjs39sueidxnil3k1feg": "Databases",
+    "tn0a5nqbrce9yebvej9h736": "Oracle",
+    "cq5doh4f24evc4ewzhg5yf3": "Datastructures",
+    "pixne08f9hda3vzcetj2jvv": "Deque",
+    "mel9qapq3oyqb5gpd7onyeq": "Dynamic Array",
+    "azirqu78s4pdbsosv0gqakm": "Hash Map",
+    "3xirn9y2ejhs5hgoh6ko9i1": "Heap",
+    "hame6ftjq5bra5fzc98u64y": "Linked List",
+    "r44heu54fmmeeaz7qccmqba": "Map",
+    "j6629ov8i69dg12ifxdbzqa": "Queue",
+    "wu8egj9yesx6l8j3odpa6br": "Set",
+    "xgleienln5stv551d6l7qv6": "Stack",
+    "3xtbw7nonlogrlsu9k2hymz": "Katas",
+    "lubegqfiz1ik4hq8fnomek2": "Lang",
+    "7k937deztzwxmov1gbde86f": "Cpp",
+    "ye47jxon8i7r302swio082v": "Lvalues and Rvalues",
+    "q1m5qyz4a56v9evbk2eujha": "Move Semantics",
+    "vs1fiq1wm14sf0cqq4ok5vj": "Std",
+    "gxtjff8r9znuypi2q4r5gjw": "Any",
+    "9q02r7785re7jcvazvp6q54": "Priority_queue",
+    "hfzytsqavasmhor93hprfkn": "Variant",
+    "3vtad9ehlxwa5n2gffrjsr1": "Versions",
+    "uhd2kqv69ly9jb7r0o6dw1t": "Libs",
+    "kmywt3vnihnkvqoabgzpuje": "Quickfix",
+    "155oput5ed55eq5lxuswdw9": "Linux",
+    "qogf6mgpnnfneh0wjxxl7dh": "Additional Setup",
+    "py8ct9qauho6ix6jxnsx6ho": "Cron",
+    "nm65zw8skkor2pnqyz8gfd7": "Fedora",
+    "56lg0varlaxfojim4yyv3af": "Nvidia Kernel Module Fix",
+    "d7p64g6cgi98y6dyktth97g": "Setup",
+    "imrdta9hjnuhto6exns9fx5": "Mint",
+    "7lv6hr002wak3sm3ufa6p38": "Setup",
+    "z8fzkjo0zke873q87zu6t71": "Mouse Sensitivity",
+    "7bty8bp48bpjoancqe5ksc9": "Qtile",
+    "bbyi6fiywaab0zcf4hvrsjx": "Debian",
+    "j0z7jbe315pr82284cgv3z3": "Raspberry Pi",
+    "rftnddr5kr2oi9582nrwjxd": "Mac",
+    "nm541dgoi0njzxnux7it18y": "Tools",
+    "acildvugww1my1n5ruojfec": "Clang Format",
+    "6w1zsa6tm5l7qqxueht03ps": "Clion",
+    "hp7jv15215pi0s92tkgr4ob": "Cmake",
+    "6kpo1942ysua78f6grwyijm": "Fzf",
+    "04uwy15ipgua4lzrmnrr5vg": "Git",
+    "r2y0vlbadwpwfpyzzsdvr9k": "Hashing",
+    "hs1l77dogz2bmr7wz3sto5x": "Jupyter",
+    "lhqlehyuif2q53xmv2q1mq7": "Latex",
+    "phdf8jn0143ohntpntjx0dh": "Obsidian",
+    "lzel0xtqe117z2xkki5gi51": "Perf",
+    "e7ccw8km6u0an5hyxtkb6zd": "Python",
+    "055m861v4j7qqpextyt7zak": "Poetry",
+    "hnokl3pj1g9ptdn1ivmpk9o": "Tmux",
+    "k7cec753w8noenycl10n1lh": "Vscode",
+    "3r1m1ztnh7xno6m00fnz03t": "Launch Json",
+    "0fi716nmxumrz83tlwkr75n": "Windows Terminal",
+    "s24j0yubtdosu348c8gbgoe": "Wsl",
+    "5fs80ws2li1d12hstqngu4h": "Windows"
+  }
+}

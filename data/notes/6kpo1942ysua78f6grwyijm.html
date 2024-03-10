@@ -1,0 +1,11 @@
+<h1 id="fzf">Fzf<a aria-hidden="true" class="anchor-heading icon-link" href="#fzf"></a></h1>
+<h3 id="install-and-setup-shortcuts">install and setup shortcuts<a aria-hidden="true" class="anchor-heading icon-link" href="#install-and-setup-shortcuts"></a></h3>
+<ul>
+<li><code>sudo dnf install fzf</code>
+Put this in your zshrc:</li>
+</ul>
+<pre class="language-sh"><code class="language-sh">if [ -x "$(command -v fzf)"  ]
+then
+    source /usr/share/fzf/shell/key-bindings.zsh
+fi
+</code></pre>
